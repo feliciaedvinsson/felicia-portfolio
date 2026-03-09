@@ -3,6 +3,7 @@ import mockupTradgard from "@/assets/mockup-tradgard.png";
 import mockupVisitkort from "@/assets/mockup-visitkort.png";
 import mockupUmekakel from "@/assets/mockup-umekakel.jpg";
 import mockupNaturfoto from "@/assets/mockup-naturfoto.png";
+import mockupKortfilm from "@/assets/mockup-kortfilm.png";
 
 export interface Project {
   id: string;
@@ -95,7 +96,7 @@ export const projects: Project[] = [
     categories: ["Filmredigering", "Fotografi"],
     description: "En kreativ kortfilm med fokus på berättande genom visuella effekter och klippning.",
     tags: ["Adobe After Effects", "Premiere Pro"],
-    thumbnail: "/placeholder.svg",
+    thumbnail: mockupKortfilm,
     images: ["/placeholder.svg", "/placeholder.svg"],
     videoUrl: "",
     process: "Från manus till färdig produktion, inklusive filmning, klippning och efterbearbetning.",
