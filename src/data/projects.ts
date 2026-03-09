@@ -105,7 +105,7 @@ export const projects: Project[] = [
     description: "En poster jag skapade under min praktik hos Chillimedia, som sedan gavs till en av deras kunder.",
     tags: ["Adobe Illustrator", "Adobe Photoshop"],
     thumbnail: mockupKortfilm,
-    images: [motorcentralenDetail1, motorcentralenDetail2],
+    images: [motorcentralenDetail1, motorcentralenDetail2, motorcentralenDetail3, motorcentralenDetail4],
     process: "Från manus till färdig produktion, inklusive filmning, klippning och efterbearbetning.",
     tools: ["Adobe Illustrator", "Adobe Photoshop"],
   },

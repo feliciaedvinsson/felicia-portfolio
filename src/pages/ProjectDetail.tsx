@@ -41,11 +41,27 @@ const ProjectDetail = () => {
 
         {/* Images */}
         <div className="grid gap-6 mb-12">
-          {project.images.map((img, i) => (
-            <div key={i} className="rounded-xl overflow-hidden bg-muted aspect-video">
-              <img src={img} alt={`${project.title} ${i + 1}`} className="w-full h-full object-cover" />
-            </div>
-          ))}
+          {project.images.map((img, i) => {
+            const isLastPair = project.images.length >= 4 && i >= project.images.length - 2;
+            if (isLastPair && i === project.images.length - 2) {
+              return (
+                <div key={i} className="grid grid-cols-2 gap-6 col-span-full">
+                  <div className="rounded-xl overflow-hidden bg-muted aspect-[3/4]">
+                    <img src={project.images[i]} alt={`${project.title} ${i + 1}`} className="w-full h-full object-cover" />
+                  </div>
+                  <div className="rounded-xl overflow-hidden bg-muted aspect-[3/4]">
+                    <img src={project.images[i + 1]} alt={`${project.title} ${i + 2}`} className="w-full h-full object-cover" />
+                  </div>
+                </div>
+              );
+            }
+            if (isLastPair && i === project.images.length - 1) return null;
+            return (
+              <div key={i} className="rounded-xl overflow-hidden bg-muted aspect-video">
+                <img src={img} alt={`${project.title} ${i + 1}`} className="w-full h-full object-cover" />
+              </div>
+            );
+          })}
         </div>
 
         {/* Video placeholder */}
