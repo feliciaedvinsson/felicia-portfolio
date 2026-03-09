@@ -4,6 +4,8 @@ import mockupTradgard from "@/assets/mockup-tradgard.png";
 import mockupVisitkort from "@/assets/mockup-visitkort.png";
 import mockupUmekakel from "@/assets/mockup-umekakel.jpg";
 import umekakelDetail from "@/assets/umekakel-detail.png";
+import umekakelDetail2 from "@/assets/umekakel-detail-2.png";
+import umekakelDetail3 from "@/assets/umekakel-detail-3.png";
 import mockupNaturfoto from "@/assets/mockup-naturfoto.png";
 import mockupKortfilm from "@/assets/mockup-kortfilm.png";
 import mockupKulturkomp from "@/assets/mockup-kulturkomp.jpg";
