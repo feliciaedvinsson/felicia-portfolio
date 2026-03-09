@@ -102,11 +102,11 @@ export const projects: Project[] = [
     title: "Motorcentralen",
     category: "Illustration",
     categories: ["Illustration"],
-    description: "En poster jag skapade under min praktik hos Chillimedia, som sedan gavs till en av deras kunder.",
+    description: "Två posters jag skapade under min praktik hos Chillimedia, som sedan gavs till en av deras kunder som en gåva.",
     tags: ["Adobe Illustrator", "Adobe Photoshop"],
     thumbnail: mockupKortfilm,
     images: [motorcentralenDetail1, motorcentralenDetail2, motorcentralenDetail3, motorcentralenDetail4],
-    process: "Från manus till färdig produktion, inklusive filmning, klippning och efterbearbetning.",
+    process: "Detta projekt genomfördes under min praktik hos Chilli Media och skapades för en av deras kunder. Uppgiften var att ta fram en poster som skulle ges bort som en gåva, där jag fick relativt fria händer i det kreativa arbetet.\n\nUtgångspunkten var att utgå från företagets grafiska profil och skapa ett uttryck som kändes representativt för deras varumärke. Målet var att ta fram en design som både fungerade som en uppskattad gåva och samtidigt speglade företagets visuella identitet.\n\nUnder processen tog jag fram två olika posters och arbetade igenom flera designförslag. Jag testade olika layoutlösningar, typografi och färgkombinationer för att hitta ett uttryck som passade både syftet och varumärket.\n\nEfter att ha utforskat och utvärderat flera versioner landade jag slutligen i den slutgiltiga designen, där fokus låg på att skapa en genomarbetad och visuellt tilltalande poster som låg i linje med företagets grafiska profil.",
     tools: ["Adobe Illustrator", "Adobe Photoshop"],
   },
   {
