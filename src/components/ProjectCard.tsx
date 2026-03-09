@@ -23,9 +23,19 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
         />
       </div>
       <div className="p-5">
-        <p className="text-xs uppercase tracking-wider text-primary font-medium mb-1">
-          {project.category}
-        </p>
+        {/* Category tags */}
+        <div className="flex flex-wrap gap-1.5 mb-3">
+          {project.categories.map((cat) => (
+            <span
+              key={cat}
+              className="text-xs px-2.5 py-1 rounded-full bg-primary/15 text-primary font-medium
+                transition-colors duration-200 hover:bg-primary/25"
+            >
+              {cat}
+            </span>
+          ))}
+        </div>
+
         <h3 className="font-serif text-lg font-semibold text-foreground mb-2">
           {project.title}
         </h3>
