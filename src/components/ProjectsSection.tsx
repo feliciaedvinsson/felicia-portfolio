@@ -24,7 +24,7 @@ const ProjectsSection = () => {
             className={`text-sm px-4 py-2 rounded-full transition-all duration-200 font-medium ${
             active === cat ?
             "bg-primary text-primary-foreground" :
-            "bg-secondary text-secondary-foreground hover:bg-primary/10"}`
+            "bg-secondary text-secondary-foreground hover:bg-primary/20 hover:text-primary"}`
             }>
             
               {cat}
