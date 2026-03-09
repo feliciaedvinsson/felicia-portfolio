@@ -13,24 +13,23 @@ const ProcessCarousel = ({ title, images, projectTitle }: { title: string; image
     return (current + offset + images.length) % images.length;
   };
 
-  const positions = [-2, -1, 0, 1, 2];
+  const positions = [-1, 0, 1];
 
   return (
     <div className="mb-12">
       <h2 className="text-2xl font-bold mb-4">{title}</h2>
-      <div className="relative h-[400px] md:h-[500px] flex items-center justify-center perspective-[1200px]">
+      <div className="relative h-[450px] md:h-[550px] flex items-center justify-center perspective-[1200px]">
         {positions.map((offset) => {
           const index = getIndex(offset);
           const isCenter = offset === 0;
-          const absOffset = Math.abs(offset);
 
-          const translateX = offset * 220;
-          const translateZ = isCenter ? 0 : -150 * absOffset;
-          const rotateY = offset * -25;
-          const scale = isCenter ? 1 : 0.75 - absOffset * 0.05;
-          const opacity = isCenter ? 1 : 0.6 - absOffset * 0.15;
-          const zIndex = 10 - absOffset;
-          const blur = isCenter ? 0 : absOffset * 2;
+          const translateX = offset * 300;
+          const translateZ = isCenter ? 0 : -120;
+          const rotateY = offset * -20;
+          const scale = isCenter ? 1 : 0.8;
+          const opacity = isCenter ? 1 : 0.5;
+          const zIndex = isCenter ? 10 : 5;
+          const blur = isCenter ? 0 : 3;
 
           return (
             <div
@@ -50,7 +49,7 @@ const ProcessCarousel = ({ title, images, projectTitle }: { title: string; image
               <img
                 src={images[index]}
                 alt={`${projectTitle} - ${title} ${index + 1}`}
-                className="w-[280px] md:w-[360px] h-[210px] md:h-[270px] object-contain rounded-xl shadow-2xl"
+                className="w-[340px] md:w-[480px] h-[255px] md:h-[360px] object-contain rounded-xl"
                 style={{
                   boxShadow: isCenter
                     ? '0 25px 60px -12px rgba(0, 0, 0, 0.5)'
