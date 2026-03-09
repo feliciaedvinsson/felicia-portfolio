@@ -91,6 +91,18 @@ export const projects: Project[] = [
     tools: ["Adobe Lightroom", "Adobe Illustrator", "Adobe After Effects", "Adobe Photoshop"],
   },
   {
+    id: "ui-kulturkompassen",
+    title: "Kulturkompassen",
+    category: "UI Design",
+    categories: ["UI Design"],
+    description: "En prototyp av en fiktiv app för att främja svenska kulturminnen.",
+    tags: ["Adobe XD"],
+    thumbnail: mockupKulturkomp,
+    images: ["/placeholder.svg", "/placeholder.svg"],
+    process: "Projektet fokuserade på att skapa en användarvänlig mobilapp för att utforska svenska kulturminnen.",
+    tools: ["Adobe XD"],
+  },
+  {
     id: "film-kortfilm",
     title: "Motorcentralen",
     category: "Illustration",
