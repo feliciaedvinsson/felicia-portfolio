@@ -6,7 +6,7 @@ const AboutSection = () => {
   return (
     <section id="om-mig" className="py-24 px-6">
       <div className="max-w-6xl mx-auto">
-        <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-start">
+        <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-stretch">
           {/* Image */}
           <div className="flex justify-center md:justify-end self-stretch">
             <div className="relative w-full max-w-sm md:max-w-none rounded-2xl overflow-hidden shadow-lg">
