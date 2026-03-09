@@ -1,7 +1,8 @@
 import { useParams, useNavigate } from "react-router-dom";
 import { projects } from "@/data/projects";
 import { Button } from "@/components/ui/button";
-import { ArrowLeft, ExternalLink } from "lucide-react";
+import { ArrowLeft, ExternalLink, ChevronLeft, ChevronRight } from "lucide-react";
+import { useState } from "react";
 
 const ProjectDetail = () => {
   const { id } = useParams();
