@@ -4,6 +4,7 @@ import mockupVisitkort from "@/assets/mockup-visitkort.png";
 import mockupUmekakel from "@/assets/mockup-umekakel.jpg";
 import mockupNaturfoto from "@/assets/mockup-naturfoto.png";
 import mockupKortfilm from "@/assets/mockup-kortfilm.png";
+import mockupKulturkomp from "@/assets/mockup-kulturkomp.jpg";
 
 export interface Project {
   id: string;
