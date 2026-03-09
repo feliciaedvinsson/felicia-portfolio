@@ -69,7 +69,7 @@ const AboutSection = () => {
 
         {/* Snabba fakta */}
         <div className="mt-20">
-          <h3 className="text-xl md:text-2xl font-semibold mb-8 text-center">Snabba fakta om mig</h3>
+          <h3 className="text-xl md:text-2xl font-semibold mb-8">Snabba fakta om mig</h3>
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
             {funFacts.map(({ icon: Icon, title, items }) => (
               <div
