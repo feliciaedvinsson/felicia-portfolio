@@ -96,7 +96,7 @@ export const projects: Project[] = [
     categories: ["Filmredigering", "Fotografi"],
     description: "En kreativ kortfilm med fokus på berättande genom visuella effekter och klippning.",
     tags: ["Adobe After Effects", "Premiere Pro"],
-    thumbnail: "/placeholder.svg",
+    thumbnail: mockupKortfilm,
     images: ["/placeholder.svg", "/placeholder.svg"],
     videoUrl: "",
     process: "Från manus till färdig produktion, inklusive filmning, klippning och efterbearbetning.",
