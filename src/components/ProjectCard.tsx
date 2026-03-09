@@ -18,7 +18,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
         <img
           src={project.thumbnail}
           alt={project.title}
-          className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
+          className="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
           loading="lazy"
         />
       </div>
