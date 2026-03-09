@@ -14,10 +14,21 @@ import motorcentralenDetail3 from "@/assets/motorcentralen-detail-3.jpg";
 import motorcentralenDetail4 from "@/assets/motorcentralen-detail-4.jpg";
 import nordvagDetail1 from "@/assets/nordvag-detail-1.png";
 import nordvagDetail2 from "@/assets/nordvag-detail-2.png";
+import nordvagSketch1 from "@/assets/nordvag-sketch-1.jpeg";
+import nordvagSketch2 from "@/assets/nordvag-sketch-2.jpeg";
+import nordvagSketch3 from "@/assets/nordvag-sketch-3.jpeg";
+import nordvagWireframe1 from "@/assets/nordvag-wireframe-1.png";
+import nordvagWireframe2 from "@/assets/nordvag-wireframe-2.png";
+import nordvagWireframe3 from "@/assets/nordvag-wireframe-3.png";
 
 export interface ProjectLink {
   label: string;
   url: string;
+}
+
+export interface ProcessGallery {
+  title: string;
+  images: string[];
 }
 
 export interface Project {
@@ -31,6 +42,7 @@ export interface Project {
   images: string[];
   videoUrl?: string;
   process: string;
+  processGalleries?: ProcessGallery[];
   tools: string[];
   links?: ProjectLink[];
 }
@@ -55,6 +67,12 @@ export const projects: Project[] = [
     thumbnail: mockupNordvag,
     images: [nordvagDetail1, nordvagDetail2],
     process: "I denna uppgift, som utfördes under min utbildning skulle vi skapa en hemsida för ett fiktivt företag som säljer friluftsprodukter. Vi fick en grafisk profil och vissa bilder som var obligatoriska att använda, vilket gav ett tydligt ramverk för designen.\n\n\n\n\nJag började med skisser på papper för att snabbt utforska layoutidéer och hur innehållet kunde struktureras både för desktop och mobil. När jag hade en tydligare vision skapade jag wireframes i Adobe Illustrator, där fokus låg på användarflöde och struktur snarare än färg och stil.\n\n\n\n\nSlutligen utvecklade jag den färdiga designen i Figma, där jag implementerade den grafiska profilen och de obligatoriska bilderna. Jag arbetade med responsiva versioner för både desktop och mobil och säkerställde att designen var användarvänlig och visuellt konsekvent över olika skärmstorlekar.",
+    processGalleries: [
+      {
+        title: "Skisser och wireframes",
+        images: [nordvagSketch1, nordvagSketch2, nordvagSketch3, nordvagWireframe1, nordvagWireframe2, nordvagWireframe3],
+      },
+    ],
     tools: ["Figma"],
     links: [
       { label: "Länk till prototyp med desktop-vy", url: "https://www.figma.com/proto/4aPRIP8BuuqRMD8ouYZ7lt/Nordva%CC%88g?node-id=1-2&t=mZfuDB0abFffbtK9-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=136%3A614" },

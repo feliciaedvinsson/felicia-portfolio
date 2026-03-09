@@ -1,7 +1,46 @@
 import { useParams, useNavigate } from "react-router-dom";
 import { projects } from "@/data/projects";
 import { Button } from "@/components/ui/button";
-import { ArrowLeft, ExternalLink } from "lucide-react";
+import { ArrowLeft, ExternalLink, ChevronLeft, ChevronRight } from "lucide-react";
+import { useState } from "react";
+
+const ProcessCarousel = ({ title, images, projectTitle }: { title: string; images: string[]; projectTitle: string }) => {
+  const [current, setCurrent] = useState(0);
+  const prev = () => setCurrent((c) => (c === 0 ? images.length - 1 : c - 1));
+  const next = () => setCurrent((c) => (c === images.length - 1 ? 0 : c + 1));
+
+  return (
+    <div className="mb-12">
+      <h2 className="text-2xl font-bold mb-4">{title}</h2>
+      <div className="relative rounded-xl overflow-hidden bg-muted">
+        <div className="aspect-[4/3] flex items-center justify-center p-4">
+          <img
+            src={images[current]}
+            alt={`${projectTitle} - ${title} ${current + 1}`}
+            className="max-w-full max-h-full object-contain"
+          />
+        </div>
+        <button
+          onClick={prev}
+          className="absolute left-3 top-1/2 -translate-y-1/2 bg-background/80 backdrop-blur-sm rounded-full p-2 hover:bg-background transition-colors"
+          aria-label="Föregående"
+        >
+          <ChevronLeft className="w-5 h-5" />
+        </button>
+        <button
+          onClick={next}
+          className="absolute right-3 top-1/2 -translate-y-1/2 bg-background/80 backdrop-blur-sm rounded-full p-2 hover:bg-background transition-colors"
+          aria-label="Nästa"
+        >
+          <ChevronRight className="w-5 h-5" />
+        </button>
+        <div className="absolute bottom-3 left-1/2 -translate-x-1/2 bg-background/80 backdrop-blur-sm rounded-full px-3 py-1 text-xs text-muted-foreground">
+          {current + 1} / {images.length}
+        </div>
+      </div>
+    </div>
+  );
+};
 
 const ProjectDetail = () => {
   const { id } = useParams();
@@ -74,8 +113,13 @@ const ProjectDetail = () => {
         {/* Process */}
         <div className="mb-12">
           <h2 className="text-2xl font-bold mb-4">Process</h2>
-          <p className="text-muted-foreground leading-relaxed">{project.process}</p>
+          <p className="text-muted-foreground leading-relaxed whitespace-pre-line">{project.process}</p>
         </div>
+
+        {/* Process Galleries */}
+        {project.processGalleries?.map((gallery, gi) => (
+          <ProcessCarousel key={gi} title={gallery.title} images={gallery.images} projectTitle={project.title} />
+        ))}
 
         {/* Links */}
         {project.links && project.links.length > 0 && (
