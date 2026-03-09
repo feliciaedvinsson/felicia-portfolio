@@ -83,7 +83,7 @@ export const projects: Project[] = [
     categories: ["Fotografi"],
     description: "En fotoserie som fångar den skandinaviska naturens skönhet genom årstiderna.",
     tags: ["Kamera", "Adobe Lightroom"],
-    thumbnail: "/placeholder.svg",
+    thumbnail: mockupNaturfoto,
     images: ["/placeholder.svg", "/placeholder.svg"],
     process: "Bilderna togs under flera månader för att fånga olika ljusförhållanden och årstider.",
     tools: ["Kamera", "Adobe Lightroom"],
