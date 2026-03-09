@@ -89,7 +89,7 @@ export const projects: Project[] = [
     tags: ["Figma"],
     thumbnail: mockupTradgard,
     images: [mockupTradgardDetail],
-    process: "Designprocessen fokuserade på att göra komplex data lättförståelig genom tydlig visuell hierarki.",
+    process: "Denna prototyp skapades tillsammans med Emil Juntikka, som en del av ett potentiellt projekt för Trädklippet AB. Kunden önskade en ny version av deras nuvarande webbplats, med ett mordernare uttryck. \n\nMer information och visuellt material kommer snart..",
     tools: ["Figma"],
   },
   {
