@@ -6,11 +6,11 @@ const AboutSection = () => {
   return (
     <section id="om-mig" className="py-24 px-6">
       <div className="max-w-6xl mx-auto">
-        <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-start">
+        <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-stretch">
           {/* Image */}
-          <div className="flex justify-center md:justify-end">
-            <div className="relative w-72 h-96 md:w-80 md:h-[28rem] rounded-2xl overflow-hidden shadow-lg">
-              <img src={feliciaImg} alt="Felicia Edvinsson" className="w-full h-full object-cover" />
+          <div className="flex justify-center md:justify-end self-stretch">
+            <div className="relative w-full max-w-sm md:max-w-none rounded-2xl overflow-hidden shadow-lg">
+              <img src={feliciaImg} alt="Felicia Edvinsson" className="w-full h-full object-cover grayscale contrast-110" />
               <div className="absolute -bottom-3 -right-3 w-full h-full rounded-2xl border-2 border-primary/20 -z-10" />
             </div>
           </div>
