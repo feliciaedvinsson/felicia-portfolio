@@ -7,16 +7,20 @@ const AboutSection = () => {
     <section id="om-mig" className="py-24 px-6">
       <div className="max-w-6xl mx-auto">
         <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-start">
-          {/* Image */}
-          <div className="flex justify-center md:justify-end">
-            <div className="relative w-72 h-96 md:w-80 md:h-[28rem] rounded-2xl overflow-hidden shadow-lg">
-              <img src={feliciaImg} alt="Felicia Edvinsson" className="w-full h-full object-cover" />
-              <div className="absolute -bottom-3 -right-3 w-full h-full rounded-2xl border-2 border-primary/20 -z-10" />
+          {/* Image – stretches to match the text block height */}
+          <div className="flex justify-center md:justify-end self-stretch">
+            <div className="relative w-full max-w-xs md:max-w-sm rounded-2xl overflow-hidden shadow-lg">
+              <img
+                src={feliciaImg}
+                alt="Felicia Edvinsson"
+                className="w-full h-full object-cover grayscale contrast-110 rounded-2xl"
+                style={{ minHeight: '20rem' }}
+              />
             </div>
           </div>
 
           {/* Text content */}
-          <div>
+          <div className="flex flex-col">
             <h2 className="text-3xl md:text-4xl font-bold mb-8">Om Mig</h2>
             <div className="space-y-5 text-muted-foreground leading-relaxed">
               <p>
@@ -29,15 +33,15 @@ const AboutSection = () => {
                 Jag studerar för närvarande en kandidatexamen i digital design vid{" "}
                 <span className="text-foreground font-medium">Högskolan Kristianstad</span>, där jag har fått möjlighet att fördjupa mig i designteori, användarcentrerade metoder och kreativa tekniker. Tveka inte att höra av dig om du vill samarbeta, eller om du är nyfiken på att veta mer om mig och mina projekt!
               </p>
+            </div>
 
-              <div className="pt-4">
-                <Button asChild variant="outline" className="rounded-full px-6 gap-2">
-                  <a href="/cv.pdf" download>
-                    <Download className="w-4 h-4" />
-                    Ladda ner CV
-                  </a>
-                </Button>
-              </div>
+            <div className="pt-6">
+              <Button asChild variant="outline" className="rounded-full px-6 gap-2">
+                <a href="/cv.pdf" download>
+                  <Download className="w-4 h-4" />
+                  Ladda ner CV
+                </a>
+              </Button>
             </div>
           </div>
         </div>
