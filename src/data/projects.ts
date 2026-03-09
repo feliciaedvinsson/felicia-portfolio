@@ -5,6 +5,7 @@ import mockupUmekakel from "@/assets/mockup-umekakel.jpg";
 import mockupNaturfoto from "@/assets/mockup-naturfoto.png";
 import mockupKortfilm from "@/assets/mockup-kortfilm.png";
 import mockupKulturkomp from "@/assets/mockup-kulturkomp.jpg";
+import mockupMotorcentralen from "@/assets/mockup-motorcentralen.jpg";
 
 export interface Project {
   id: string;
