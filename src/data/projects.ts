@@ -1,5 +1,6 @@
 import mockupNordvag from "@/assets/mockup-nordvag.png";
 import mockupTradgard from "@/assets/mockup-tradgard.png";
+import mockupVisitkort from "@/assets/mockup-visitkort.png";
 
 export interface Project {
   id: string;
@@ -52,7 +53,7 @@ export const projects: Project[] = [
     category: "Grafisk Design",
     description: "En serie affischer för ett kulturevenemang med fokus på typografi och färg.",
     tags: ["Adobe Illustrator", "Canva"],
-    thumbnail: "/placeholder.svg",
+    thumbnail: mockupVisitkort,
     images: ["/placeholder.svg", "/placeholder.svg"],
     process: "Konceptet utvecklades genom skisser och moodboards innan den digitala produktionen i Illustrator.",
     tools: ["Adobe Illustrator", "Canva"],
