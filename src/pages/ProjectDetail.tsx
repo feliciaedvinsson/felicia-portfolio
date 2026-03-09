@@ -121,7 +121,7 @@ const ProjectDetail = () => {
         {/* Images */}
         <div className="grid gap-6 mb-12">
           {project.images.map((img, i) => {
-            const isLastPair = project.images.length >= 4 && i >= project.images.length - 2;
+            const isLastPair = project.images.length >= 3 && i >= project.images.length - 2;
             if (isLastPair && i === project.images.length - 2) {
               return (
                 <div key={i} className="grid grid-cols-2 gap-6 col-span-full">

@@ -4,6 +4,8 @@ import mockupTradgard from "@/assets/mockup-tradgard.png";
 import mockupVisitkort from "@/assets/mockup-visitkort.png";
 import mockupUmekakel from "@/assets/mockup-umekakel.jpg";
 import umekakelDetail from "@/assets/umekakel-detail.png";
+import umekakelDetail2 from "@/assets/umekakel-detail-2.png";
+import umekakelDetail3 from "@/assets/umekakel-detail-3.png";
 import mockupNaturfoto from "@/assets/mockup-naturfoto.png";
 import mockupKortfilm from "@/assets/mockup-kortfilm.png";
 import mockupKulturkomp from "@/assets/mockup-kulturkomp.jpg";
@@ -113,7 +115,7 @@ export const projects: Project[] = [
     description: "Reklam flyers till företaget Umekakel, som skapades under min praktik hos Chillimedia.",
     tags: ["Adobe Illustrator", "Adobe Photoshop"],
     thumbnail: mockupUmekakel,
-    images: [umekakelDetail],
+    images: [umekakelDetail, umekakelDetail2, umekakelDetail3],
     process: "Arbetet inkluderade konkurrentanalys, moodboards, och iterativa designrundor med klienten.",
     tools: ["Adobe Illustrator", "Adobe Photoshop"],
   },
