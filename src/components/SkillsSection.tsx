@@ -1,14 +1,17 @@
-import { Figma, Code, Paintbrush, Film, Palette, PenTool, Layout, Globe } from "lucide-react";
+import { Figma, Code, Paintbrush, Film, Palette, PenTool, Layout, Globe, Camera, Sun } from "lucide-react";
 
 const skills = [
-{ name: "Adobe Illustrator", icon: PenTool },
-{ name: "Adobe XD", icon: Layout },
-{ name: "After Effects", icon: Film },
-{ name: "Procreate", icon: Paintbrush },
-{ name: "Figma", icon: Figma },
-{ name: "Canva", icon: Palette },
-{ name: "HTML", icon: Code },
-{ name: "CSS", icon: Globe }];
+  { name: "Adobe Illustrator", icon: PenTool },
+  { name: "Adobe Photoshop", icon: Paintbrush },
+  { name: "Adobe Lightroom", icon: Sun },
+  { name: "Adobe XD", icon: Layout },
+  { name: "After Effects", icon: Film },
+  { name: "Procreate", icon: Palette },
+  { name: "Figma", icon: Figma },
+  { name: "Canva", icon: Camera },
+  { name: "HTML", icon: Code },
+  { name: "CSS", icon: Globe },
+];
 
 
 const SkillsSection = () => {
