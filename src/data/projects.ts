@@ -14,10 +14,21 @@ import motorcentralenDetail3 from "@/assets/motorcentralen-detail-3.jpg";
 import motorcentralenDetail4 from "@/assets/motorcentralen-detail-4.jpg";
 import nordvagDetail1 from "@/assets/nordvag-detail-1.png";
 import nordvagDetail2 from "@/assets/nordvag-detail-2.png";
+import nordvagSketch1 from "@/assets/nordvag-sketch-1.jpeg";
+import nordvagSketch2 from "@/assets/nordvag-sketch-2.jpeg";
+import nordvagSketch3 from "@/assets/nordvag-sketch-3.jpeg";
+import nordvagWireframe1 from "@/assets/nordvag-wireframe-1.png";
+import nordvagWireframe2 from "@/assets/nordvag-wireframe-2.png";
+import nordvagWireframe3 from "@/assets/nordvag-wireframe-3.png";
 
 export interface ProjectLink {
   label: string;
   url: string;
+}
+
+export interface ProcessGallery {
+  title: string;
+  images: string[];
 }
 
 export interface Project {
@@ -31,6 +42,7 @@ export interface Project {
   images: string[];
   videoUrl?: string;
   process: string;
+  processGalleries?: ProcessGallery[];
   tools: string[];
   links?: ProjectLink[];
 }
