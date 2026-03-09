@@ -1,4 +1,5 @@
 import mockupNordvag from "@/assets/mockup-nordvag.png";
+import mockupTradgard from "@/assets/mockup-tradgard.png";
 
 export interface Project {
   id: string;
@@ -40,7 +41,7 @@ export const projects: Project[] = [
     category: "UI Design",
     description: "Ett intuitivt dashboard för datavisualisering med ren layout och tydlig hierarki.",
     tags: ["Figma", "Adobe XD"],
-    thumbnail: "/placeholder.svg",
+    thumbnail: mockupTradgard,
     images: ["/placeholder.svg", "/placeholder.svg"],
     process: "Designprocessen fokuserade på att göra komplex data lättförståelig genom tydlig visuell hierarki.",
     tools: ["Figma", "Adobe XD"],
