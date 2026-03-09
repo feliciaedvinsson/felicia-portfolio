@@ -1,4 +1,5 @@
 import mockupNordvag from "@/assets/mockup-nordvag.png";
+import mockupTradgardDetail from "@/assets/mockup-tradgard-detail.png";
 import mockupTradgard from "@/assets/mockup-tradgard.png";
 import mockupVisitkort from "@/assets/mockup-visitkort.png";
 import mockupUmekakel from "@/assets/mockup-umekakel.jpg";
@@ -87,7 +88,7 @@ export const projects: Project[] = [
     description: "En prototyp av en ny hemsida till Trädklippet AB.",
     tags: ["Figma"],
     thumbnail: mockupTradgard,
-    images: ["/placeholder.svg", "/placeholder.svg"],
+    images: [mockupTradgardDetail],
     process: "Designprocessen fokuserade på att göra komplex data lättförståelig genom tydlig visuell hierarki.",
     tools: ["Figma"],
   },
