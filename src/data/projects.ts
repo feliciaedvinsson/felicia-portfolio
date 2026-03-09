@@ -10,6 +10,8 @@ import mockupIntext from "@/assets/mockup-intext.png";
 import mockupEpson from "@/assets/mockup-epson.png";
 import motorcentralenDetail1 from "@/assets/motorcentralen-detail-1.png";
 import motorcentralenDetail2 from "@/assets/motorcentralen-detail-2.png";
+import motorcentralenDetail3 from "@/assets/motorcentralen-detail-3.jpg";
+import motorcentralenDetail4 from "@/assets/motorcentralen-detail-4.jpg";
 
 export interface Project {
   id: string;
@@ -103,7 +105,7 @@ export const projects: Project[] = [
     description: "En poster jag skapade under min praktik hos Chillimedia, som sedan gavs till en av deras kunder.",
     tags: ["Adobe Illustrator", "Adobe Photoshop"],
     thumbnail: mockupKortfilm,
-    images: [motorcentralenDetail1, motorcentralenDetail2],
+    images: [motorcentralenDetail1, motorcentralenDetail2, motorcentralenDetail3, motorcentralenDetail4],
     process: "Från manus till färdig produktion, inklusive filmning, klippning och efterbearbetning.",
     tools: ["Adobe Illustrator", "Adobe Photoshop"],
   },
