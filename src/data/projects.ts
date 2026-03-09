@@ -1,3 +1,5 @@
+import mockupNordvag from "@/assets/mockup-nordvag.png";
+
 export interface Project {
   id: string;
   title: string;
