@@ -12,6 +12,13 @@ import motorcentralenDetail1 from "@/assets/motorcentralen-detail-1.png";
 import motorcentralenDetail2 from "@/assets/motorcentralen-detail-2.png";
 import motorcentralenDetail3 from "@/assets/motorcentralen-detail-3.jpg";
 import motorcentralenDetail4 from "@/assets/motorcentralen-detail-4.jpg";
+import nordvagDetail1 from "@/assets/nordvag-detail-1.png";
+import nordvagDetail2 from "@/assets/nordvag-detail-2.png";
+
+export interface ProjectLink {
+  label: string;
+  url: string;
+}
 
 export interface Project {
   id: string;
@@ -25,6 +32,7 @@ export interface Project {
   videoUrl?: string;
   process: string;
   tools: string[];
+  links?: ProjectLink[];
 }
 
 export const categories = [
@@ -45,9 +53,13 @@ export const projects: Project[] = [
     description: "En prototyp av en fiktiv hemsida för friluftsprodukter.",
     tags: ["Figma"],
     thumbnail: mockupNordvag,
-    images: ["/placeholder.svg", "/placeholder.svg"],
+    images: [nordvagDetail1, nordvagDetail2],
     process: "Projektet startade med användarundersökningar och wireframes innan den visuella designen tog form i Figma.",
     tools: ["Figma"],
+    links: [
+      { label: "Länk till prototyp med desktop-vy", url: "https://www.figma.com/proto/4aPRIP8BuuqRMD8ouYZ7lt/Nordva%CC%88g?node-id=1-2&t=mZfuDB0abFffbtK9-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=136%3A614" },
+      { label: "Länk till prototyp med mobil-vy", url: "https://www.figma.com/proto/4aPRIP8BuuqRMD8ouYZ7lt/Nordva%CC%88g?node-id=200-333&t=y82GRpgvDHPcHnwX-1&scaling=scale-down&content-scaling=fixed&page-id=4%3A25&starting-point-node-id=200%3A333" },
+    ],
   },
   {
     id: "ui-dashboard",

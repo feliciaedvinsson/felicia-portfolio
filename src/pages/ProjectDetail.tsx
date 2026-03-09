@@ -1,7 +1,7 @@
 import { useParams, useNavigate } from "react-router-dom";
 import { projects } from "@/data/projects";
 import { Button } from "@/components/ui/button";
-import { ArrowLeft } from "lucide-react";
+import { ArrowLeft, ExternalLink } from "lucide-react";
 
 const ProjectDetail = () => {
   const { id } = useParams();
@@ -76,6 +76,27 @@ const ProjectDetail = () => {
           <h2 className="text-2xl font-bold mb-4">Process</h2>
           <p className="text-muted-foreground leading-relaxed">{project.process}</p>
         </div>
+
+        {/* Links */}
+        {project.links && project.links.length > 0 && (
+          <div className="mb-12">
+            <h2 className="text-2xl font-bold mb-4">Länkar</h2>
+            <div className="flex flex-col gap-3">
+              {project.links.map((link, i) => (
+                <a
+                  key={i}
+                  href={link.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-primary hover:underline"
+                >
+                  <ExternalLink className="w-4 h-4" />
+                  {link.label}
+                </a>
+              ))}
+            </div>
+          </div>
+        )}
 
         {/* Tools */}
         <div>
