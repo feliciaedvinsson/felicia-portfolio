@@ -30,7 +30,7 @@ const ContactSection = () => {
               value={form.name}
               onChange={(e) => setForm({ ...form, name: e.target.value })}
               required
-              className="rounded-lg"
+              className="rounded-lg bg-white/90 text-gray-900 placeholder:text-gray-500 border-white/30"
             />
           </div>
           <div>
@@ -40,7 +40,7 @@ const ContactSection = () => {
               value={form.email}
               onChange={(e) => setForm({ ...form, email: e.target.value })}
               required
-              className="rounded-lg"
+              className="rounded-lg bg-white/90 text-gray-900 placeholder:text-gray-500 border-white/30"
             />
           </div>
           <div>
@@ -50,7 +50,7 @@ const ContactSection = () => {
               value={form.message}
               onChange={(e) => setForm({ ...form, message: e.target.value })}
               required
-              className="rounded-lg resize-none"
+              className="rounded-lg resize-none bg-white/90 text-gray-900 placeholder:text-gray-500 border-white/30"
             />
           </div>
           <div className="flex flex-col sm:flex-row gap-4">
