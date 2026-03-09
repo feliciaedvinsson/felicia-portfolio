@@ -16,7 +16,7 @@ const HeroSection = () => {
         <p className="text-sm uppercase tracking-[0.3em] text-muted-foreground mb-4 font-medium">
           Digital Designer
         </p>
-        <h1 className="text-5xl md:text-7xl font-bold text-foreground mb-6 leading-tight">
+        <h1 className="text-5xl font-bold text-foreground mb-6 leading-tight md:text-9xl">
           Felicia<br />
           <span className="text-primary">Edvinsson</span>
         </h1>
