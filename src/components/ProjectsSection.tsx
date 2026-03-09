@@ -3,9 +3,9 @@ import { categories, projects } from "@/data/projects";
 import ProjectCard from "./ProjectCard";
 
 const ProjectsSection = () => {
-  const [active, setActive] = useState("Alla");
+  const [active, setActive] = useState("Utvalda");
 
-  const filtered = active === "Alla" ? projects : projects.filter((p) => p.category === active);
+  const filtered = active === "Utvalda" ? projects.slice(0, 6) : projects.filter((p) => p.category === active);
 
   return (
     <section id="projekt" className="py-24 px-6">
