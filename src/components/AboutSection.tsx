@@ -13,7 +13,7 @@ const AboutSection = () => {
               <img
                 src={feliciaImg}
                 alt="Felicia Edvinsson"
-                className="w-full h-full object-cover grayscale contrast-110 rounded-2xl"
+                className="w-full h-full object-cover object-top grayscale contrast-110 rounded-2xl"
                 style={{ minHeight: '20rem' }}
               />
             </div>
