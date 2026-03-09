@@ -12,7 +12,7 @@ export interface Project {
 }
 
 export const categories = [
-  "Alla",
+  "Utvalda",
   "UI Design",
   "Grafisk Design",
   "Fotografi",
