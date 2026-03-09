@@ -13,8 +13,8 @@ const AboutSection = () => {
               <img
                 src={feliciaImg}
                 alt="Felicia Edvinsson"
-                className="w-full h-auto object-cover object-top grayscale contrast-110 rounded-2xl"
-              />
+                className="w-full h-auto object-cover object-top grayscale contrast-110 rounded-2xl" />
+              
             </div>
           </div>
 
@@ -22,8 +22,8 @@ const AboutSection = () => {
           <div className="flex flex-col">
             <h2 className="text-3xl md:text-4xl font-bold mb-8">Om Mig</h2>
             <div className="space-y-5 text-muted-foreground leading-relaxed">
-              <p>
-                Jag är en designer med en passion för UI- och grafisk design. Ända sedan jag var liten har jag älskat att vara kreativ på olika sätt, och än idag hittar jag ofta nya saker att pyssla med och hobbys att hänge mig till. Jag har god teknisk kompetens inom flera designverktyg, bland annat Adobe Illustrator, Adobe After Effects, Adobe XD, Procreate, Figma och Canva. Dessutom har jag grundläggande kunskaper i kodning med HTML och CSS, vilket ger mig en bättre förståelse för hur design och utveckling möts i digitala projekt.
+              <p>Jag är en designer med en passion för UI- och grafisk design. Ända sedan jag var liten har jag älskat att vara kreativ på olika sätt, och än idag hittar jag ofta nya saker att pyssla med och hobbys att hänge mig till. Jag har god teknisk kompetens inom flera designverktyg, bland annat Adobe Illustrator, Adobe After Effects, Procreate, Figma och Canva. Dessutom har jag grundläggande kunskaper i kodning med HTML och CSS, vilket ger mig en bättre förståelse för hur design och utveckling möts i digitala projekt.
+
               </p>
               <p>
                 Förutom min tekniska bakgrund har jag erfarenheter inom service, försäljning och projektledning, vilket har hjälpt mig att utveckla starka kommunikations- och samarbetsfärdigheter. Jag tror att ett framgångsrikt projekt bygger på ett bra samarbete mellan kollegor och kunder, och jag strävar alltid efter att skapa en öppen och inkluderande dialog för att nå de bästa resultaten.
@@ -45,8 +45,8 @@ const AboutSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>);
+
 };
 
 export default AboutSection;
