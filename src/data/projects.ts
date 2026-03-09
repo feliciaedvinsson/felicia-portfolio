@@ -5,6 +5,7 @@ import mockupUmekakel from "@/assets/mockup-umekakel.jpg";
 import mockupNaturfoto from "@/assets/mockup-naturfoto.png";
 import mockupKortfilm from "@/assets/mockup-kortfilm.png";
 import mockupKulturkomp from "@/assets/mockup-kulturkomp.jpg";
+import mockupMotorcentralen from "@/assets/mockup-motorcentralen.jpg";
 
 export interface Project {
   id: string;
@@ -113,5 +114,17 @@ export const projects: Project[] = [
     images: ["/placeholder.svg", "/placeholder.svg"],
     process: "Projektet fokuserade på att skapa en användarvänlig app-prototyp för att utforska svenska kulturminnen.",
     tools: ["Adobe XD"],
+  },
+  {
+    id: "motorcentralen-foto",
+    title: "Motorcentralen",
+    category: "Motion & Video",
+    categories: ["Motion & Video", "Fotografi"],
+    description: "En projekt jag utförde under min praktik hos Chillimedia.",
+    tags: ["Adobe After Effects", "Adobe Lightroom", "Adobe Photoshop"],
+    thumbnail: mockupMotorcentralen,
+    images: ["/placeholder.svg", "/placeholder.svg"],
+    process: "Projektet kombinerade fotografi och videoproduktion för att skapa visuellt material.",
+    tools: ["Adobe After Effects", "Adobe Lightroom", "Adobe Photoshop"],
   },
 ];
