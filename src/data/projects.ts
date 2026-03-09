@@ -53,7 +53,7 @@ export const projects: Project[] = [
     category: "Grafisk Design",
     description: "En serie affischer för ett kulturevenemang med fokus på typografi och färg.",
     tags: ["Adobe Illustrator", "Canva"],
-    thumbnail: "/placeholder.svg",
+    thumbnail: mockupVisitkort,
     images: ["/placeholder.svg", "/placeholder.svg"],
     process: "Konceptet utvecklades genom skisser och moodboards innan den digitala produktionen i Illustrator.",
     tools: ["Adobe Illustrator", "Canva"],
