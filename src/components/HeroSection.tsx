@@ -17,8 +17,7 @@ const HeroSection = () => {
           Digital Designer
         </p>
         <h1 className="text-6xl md:text-8xl lg:text-9xl font-bold text-foreground mb-6 leading-tight">
-          Felicia<br />
-          <span className="text-primary">Edvinsson</span>
+          Felicia <span className="text-primary">Edvinsson</span>
         </h1>
         <p className="text-lg md:text-xl text-muted-foreground max-w-xl mx-auto mb-10 leading-relaxed">
           Kreativ digital designer med passion för UI-design och grafisk formgivning. 
