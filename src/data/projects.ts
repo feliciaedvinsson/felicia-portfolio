@@ -88,7 +88,7 @@ export const projects: Project[] = [
     description: "En prototyp av en ny hemsida till Trädklippet AB.",
     tags: ["Figma"],
     thumbnail: mockupTradgard,
-    images: ["/placeholder.svg", "/placeholder.svg"],
+    images: [mockupTradgardDetail],
     process: "Designprocessen fokuserade på att göra komplex data lättförståelig genom tydlig visuell hierarki.",
     tools: ["Figma"],
   },
