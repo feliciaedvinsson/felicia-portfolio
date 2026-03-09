@@ -31,7 +31,7 @@ const AboutSection = () => {
               <img
                 src={feliciaImg}
                 alt="Felicia Edvinsson"
-                className="w-full h-full object-cover grayscale contrast-110"
+                className="w-full h-full object-contain grayscale contrast-110"
                 style={{ filter: "grayscale(100%) contrast(1.1)" }}
               />
               <div className="absolute -bottom-3 -right-3 w-full h-full rounded-2xl border-2 border-primary/20 -z-10" />
