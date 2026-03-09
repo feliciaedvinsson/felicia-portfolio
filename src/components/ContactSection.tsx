@@ -30,7 +30,7 @@ const ContactSection = () => {
               value={form.name}
               onChange={(e) => setForm({ ...form, name: e.target.value })}
               required
-              className="rounded-lg"
+              className="rounded-lg bg-white/90 text-gray-900 placeholder:text-gray-500 border-white/30"
             />
           </div>
           <div>
