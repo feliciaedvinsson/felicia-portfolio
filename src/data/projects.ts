@@ -65,7 +65,7 @@ export const projects: Project[] = [
     category: "Grafisk Design",
     description: "Komplett visuell identitet inklusive logotyp, färgpalett och typografi för ett startup.",
     tags: ["Adobe Illustrator", "Figma"],
-    thumbnail: "/placeholder.svg",
+    thumbnail: mockupUmekakel,
     images: ["/placeholder.svg", "/placeholder.svg"],
     process: "Arbetet inkluderade konkurrentanalys, moodboards, och iterativa designrundor med klienten.",
     tools: ["Adobe Illustrator", "Figma"],
