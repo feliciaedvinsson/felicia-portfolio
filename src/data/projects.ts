@@ -115,4 +115,16 @@ export const projects: Project[] = [
     process: "Projektet fokuserade på att skapa en användarvänlig app-prototyp för att utforska svenska kulturminnen.",
     tools: ["Adobe XD"],
   },
+  {
+    id: "motorcentralen-foto",
+    title: "Motorcentralen",
+    category: "Motion & Video",
+    categories: ["Motion & Video", "Fotografi"],
+    description: "En projekt jag utförde under min praktik hos Chillimedia.",
+    tags: ["Adobe After Effects", "Adobe Lightroom", "Adobe Photoshop"],
+    thumbnail: mockupMotorcentralen,
+    images: ["/placeholder.svg", "/placeholder.svg"],
+    process: "Projektet kombinerade fotografi och videoproduktion för att skapa visuellt material.",
+    tools: ["Adobe After Effects", "Adobe Lightroom", "Adobe Photoshop"],
+  },
 ];
