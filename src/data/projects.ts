@@ -4,6 +4,7 @@ import mockupVisitkort from "@/assets/mockup-visitkort.png";
 import mockupUmekakel from "@/assets/mockup-umekakel.jpg";
 import mockupNaturfoto from "@/assets/mockup-naturfoto.png";
 import mockupKortfilm from "@/assets/mockup-kortfilm.png";
+import mockupKulturkomp from "@/assets/mockup-kulturkomp.jpg";
 
 export interface Project {
   id: string;
@@ -88,6 +89,18 @@ export const projects: Project[] = [
     images: ["/placeholder.svg", "/placeholder.svg"],
     process: "Bilderna togs under flera månader för att fånga olika ljusförhållanden och årstider.",
     tools: ["Adobe Lightroom", "Adobe Illustrator", "Adobe After Effects", "Adobe Photoshop"],
+  },
+  {
+    id: "ui-kulturkompassen",
+    title: "Kulturkompassen",
+    category: "UI Design",
+    categories: ["UI Design"],
+    description: "En prototyp av en fiktiv app för att främja svenska kulturminnen.",
+    tags: ["Adobe XD"],
+    thumbnail: mockupKulturkomp,
+    images: ["/placeholder.svg", "/placeholder.svg"],
+    process: "Projektet fokuserade på att skapa en användarvänlig mobilapp för att utforska svenska kulturminnen.",
+    tools: ["Adobe XD"],
   },
   {
     id: "film-kortfilm",
