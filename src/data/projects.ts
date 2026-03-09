@@ -141,4 +141,16 @@ export const projects: Project[] = [
     process: "Projektet inkluderade konceptutveckling och grafisk produktion för att skapa en unik poster.",
     tools: ["Adobe Illustrator", "Adobe Photoshop"],
   },
+  {
+    id: "epson-illustration",
+    title: "EPSON",
+    category: "Illustration",
+    categories: ["Illustration"],
+    description: "En poster jag skapade under min praktik hos Chillimedia, som sedan gavs till en av deras kunder.",
+    tags: ["Adobe Illustrator", "Adobe Photoshop"],
+    thumbnail: mockupEpson,
+    images: ["/placeholder.svg", "/placeholder.svg"],
+    process: "Projektet inkluderade konceptutveckling och illustrationsarbete för att skapa en unik poster.",
+    tools: ["Adobe Illustrator", "Adobe Photoshop"],
+  },
 ];
