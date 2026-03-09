@@ -7,6 +7,7 @@ export interface Project {
   id: string;
   title: string;
   category: string;
+  categories: string[];
   description: string;
   tags: string[];
   thumbnail: string;
