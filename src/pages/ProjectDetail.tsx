@@ -75,8 +75,13 @@ const ProjectDetail = () => {
         {/* Process */}
         <div className="mb-12">
           <h2 className="text-2xl font-bold mb-4">Process</h2>
-          <p className="text-muted-foreground leading-relaxed">{project.process}</p>
+          <p className="text-muted-foreground leading-relaxed whitespace-pre-line">{project.process}</p>
         </div>
+
+        {/* Process Galleries */}
+        {project.processGalleries?.map((gallery, gi) => (
+          <ProcessCarousel key={gi} title={gallery.title} images={gallery.images} projectTitle={project.title} />
+        ))}
 
         {/* Links */}
         {project.links && project.links.length > 0 && (
