@@ -2,6 +2,7 @@ import mockupNordvag from "@/assets/mockup-nordvag.png";
 import mockupTradgard from "@/assets/mockup-tradgard.png";
 import mockupVisitkort from "@/assets/mockup-visitkort.png";
 import mockupUmekakel from "@/assets/mockup-umekakel.jpg";
+import mockupNaturfoto from "@/assets/mockup-naturfoto.png";
 
 export interface Project {
   id: string;
