@@ -29,7 +29,7 @@ export const projects: Project[] = [
     category: "UI Design",
     description: "En modern redesign av en mobilapplikation med fokus på användarvänlighet och visuell klarhet.",
     tags: ["Figma", "Adobe XD"],
-    thumbnail: "/placeholder.svg",
+    thumbnail: mockupNordvag,
     images: ["/placeholder.svg", "/placeholder.svg"],
     process: "Projektet startade med användarundersökningar och wireframes innan den visuella designen tog form i Figma.",
     tools: ["Figma", "Adobe XD", "Adobe Illustrator"],
