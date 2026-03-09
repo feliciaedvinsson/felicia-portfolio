@@ -12,6 +12,13 @@ import motorcentralenDetail1 from "@/assets/motorcentralen-detail-1.png";
 import motorcentralenDetail2 from "@/assets/motorcentralen-detail-2.png";
 import motorcentralenDetail3 from "@/assets/motorcentralen-detail-3.jpg";
 import motorcentralenDetail4 from "@/assets/motorcentralen-detail-4.jpg";
+import nordvagDetail1 from "@/assets/nordvag-detail-1.png";
+import nordvagDetail2 from "@/assets/nordvag-detail-2.png";
+
+export interface ProjectLink {
+  label: string;
+  url: string;
+}
 
 export interface Project {
   id: string;
@@ -25,6 +32,7 @@ export interface Project {
   videoUrl?: string;
   process: string;
   tools: string[];
+  links?: ProjectLink[];
 }
 
 export const categories = [
