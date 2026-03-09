@@ -20,25 +20,14 @@ const AboutSection = () => {
             <h2 className="text-3xl md:text-4xl font-bold mb-8">Om Mig</h2>
             <div className="space-y-5 text-muted-foreground leading-relaxed">
               <p>
-                <span className="text-foreground font-semibold">Felicia Edvinsson</span> är en designer med 
-                passion för UI och grafisk design. Ända sedan hon var liten har hon älskat att vara kreativ 
-                på olika sätt, och hon njuter fortfarande av att upptäcka nya hobbyer och kreativa utlopp.
+                Jag är en designer med en passion för UI- och grafisk design. Ända sedan jag var liten har jag älskat att vara kreativ på olika sätt, och än idag hittar jag ofta nya saker att pyssla med och hobbys att hänge mig till. Jag har god teknisk kompetens inom flera designverktyg, bland annat Adobe Illustrator, Adobe After Effects, Adobe XD, Procreate, Figma och Canva. Dessutom har jag grundläggande kunskaper i kodning med HTML och CSS, vilket ger mig en bättre förståelse för hur design och utveckling möts i digitala projekt.
               </p>
               <p>
-                Hon har starka tekniska kunskaper i flera designverktyg inklusive Adobe Illustrator, 
-                Adobe XD, Adobe After Effects, Procreate, Figma och Canva. Hon har även grundläggande 
-                kunskaper i HTML och CSS, vilket ger henne en djupare förståelse för hur design och 
-                utveckling samverkar i digitala projekt.
+                Förutom min tekniska bakgrund har jag erfarenheter inom service, försäljning och projektledning, vilket har hjälpt mig att utveckla starka kommunikations- och samarbetsfärdigheter. Jag tror att ett framgångsrikt projekt bygger på ett bra samarbete mellan kollegor och kunder, och jag strävar alltid efter att skapa en öppen och inkluderande dialog för att nå de bästa resultaten.
               </p>
               <p>
-                Utöver sin tekniska bakgrund har hon erfarenhet av service, försäljning och 
-                projektledning, vilket har hjälpt henne att utveckla starka kommunikations- och 
-                samarbetsförmågor. Hon tror att framgångsrika projekt bygger på starkt samarbete 
-                mellan kollegor och kunder.
-              </p>
-              <p>
-                Hon studerar för närvarande en kandidatexamen i Digital Design vid{" "}
-                <span className="text-foreground font-medium">Högskolan Kristianstad</span>.
+                Jag studerar för närvarande en kandidatexamen i digital design vid{" "}
+                <span className="text-foreground font-medium">Högskolan Kristianstad</span>, där jag har fått möjlighet att fördjupa mig i designteori, användarcentrerade metoder och kreativa tekniker. Tveka inte att höra av dig om du vill samarbeta, eller om du är nyfiken på att veta mer om mig och mina projekt!
               </p>
 
               <div className="pt-4">
