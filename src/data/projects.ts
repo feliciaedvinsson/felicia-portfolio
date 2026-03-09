@@ -7,6 +7,7 @@ import mockupKortfilm from "@/assets/mockup-kortfilm.png";
 import mockupKulturkomp from "@/assets/mockup-kulturkomp.jpg";
 import mockupMotorcentralen from "@/assets/mockup-motorcentralen.jpg";
 import mockupIntext from "@/assets/mockup-intext.png";
+import mockupEpson from "@/assets/mockup-epson.png";
 
 export interface Project {
   id: string;
