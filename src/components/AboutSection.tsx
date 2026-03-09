@@ -7,9 +7,9 @@ const AboutSection = () => {
     <section id="om-mig" className="py-24 px-6">
       <div className="max-w-6xl mx-auto">
         <div className="grid md:grid-cols-[auto_1fr] gap-12 lg:gap-16 items-start">
-          {/* Image – aligned to bottom of text block */}
-          <div className="hidden md:flex items-end self-stretch pb-[3.5rem]">
-            <div className="w-64 lg:w-72 rounded-2xl overflow-hidden shadow-lg">
+          {/* Image – on mobile: centered above text, on desktop: aligned to bottom of text */}
+          <div className="flex justify-center md:items-end md:self-stretch md:pb-[3.5rem]">
+            <div className="w-48 sm:w-56 md:w-64 lg:w-72 rounded-2xl overflow-hidden shadow-lg">
               <img
                 src={feliciaImg}
                 alt="Felicia Edvinsson"
