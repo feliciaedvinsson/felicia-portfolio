@@ -9,8 +9,8 @@ const HeroSection = () => {
       {/* Decorative shapes */}
       <div className="absolute top-20 right-10 w-64 h-64 rounded-full bg-primary/5 blur-3xl" />
       <div className="absolute bottom-20 left-10 w-48 h-48 rounded-full bg-accent/10 blur-2xl" />
-      <div className="absolute top-1/3 left-1/4 w-3 h-3 rounded-full bg-primary/30" />
-      <div className="absolute bottom-1/3 right-1/4 w-2 h-2 rounded-full bg-primary/20" />
+      <div className="absolute top-1/3 left-1/4 w-3 h-3 rounded-full bg-primary/30 blur-sm" />
+      <div className="absolute bottom-1/3 right-1/4 w-2 h-2 rounded-full bg-primary/20 blur-sm" />
 
       <div className="relative z-10 text-center px-6 max-w-3xl mx-auto animate-fade-in">
         <p className="text-sm uppercase tracking-[0.3em] text-muted-foreground mb-4 font-medium">
