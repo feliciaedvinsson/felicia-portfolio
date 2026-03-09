@@ -21,7 +21,7 @@ const funFacts = [
   {
     icon: Star,
     title: "Kuriosa",
-    items: ["Jag älskar julen", "Distraheras lätt av söta hundar"],
+    items: ["Älskar julen", "Hundmänniska"],
   },
 ];
 
