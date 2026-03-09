@@ -113,7 +113,7 @@ export const projects: Project[] = [
     description: "Reklam flyers till företaget Umekakel, som skapades under min praktik hos Chillimedia.",
     tags: ["Adobe Illustrator", "Adobe Photoshop"],
     thumbnail: mockupUmekakel,
-    images: ["/placeholder.svg", "/placeholder.svg"],
+    images: [umekakelDetail],
     process: "Arbetet inkluderade konkurrentanalys, moodboards, och iterativa designrundor med klienten.",
     tools: ["Adobe Illustrator", "Adobe Photoshop"],
   },
