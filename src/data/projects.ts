@@ -54,7 +54,7 @@ export const projects: Project[] = [
     tags: ["Figma"],
     thumbnail: mockupNordvag,
     images: [nordvagDetail1, nordvagDetail2],
-    process: "Projektet startade med användarundersökningar och wireframes innan den visuella designen tog form i Figma.",
+    process: "I denna uppgift, som utfördes under min utbildning skulle vi skapa en hemsida för ett fiktivt företag som säljer friluftsprodukter. Vi fick en grafisk profil och vissa bilder som var obligatoriska att använda, vilket gav ett tydligt ramverk för designen.\n\n\n\n\nJag började med skisser på papper för att snabbt utforska layoutidéer och hur innehållet kunde struktureras både för desktop och mobil. När jag hade en tydligare vision skapade jag wireframes i Adobe Illustrator, där fokus låg på användarflöde och struktur snarare än färg och stil.\n\n\n\n\nSlutligen utvecklade jag den färdiga designen i Figma, där jag implementerade den grafiska profilen och de obligatoriska bilderna. Jag arbetade med responsiva versioner för både desktop och mobil och säkerställde att designen var användarvänlig och visuellt konsekvent över olika skärmstorlekar.",
     tools: ["Figma"],
     links: [
       { label: "Länk till prototyp med desktop-vy", url: "https://www.figma.com/proto/4aPRIP8BuuqRMD8ouYZ7lt/Nordva%CC%88g?node-id=1-2&t=mZfuDB0abFffbtK9-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=136%3A614" },
