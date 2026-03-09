@@ -6,7 +6,18 @@ const AboutSection = () => {
   return (
     <section id="om-mig" className="py-24 px-6">
       <div className="max-w-6xl mx-auto">
-        <div className="grid md:grid-cols-[1fr_auto] gap-12 lg:gap-16 items-start">
+        <div className="grid md:grid-cols-[auto_1fr] gap-12 lg:gap-16 items-start">
+          {/* Image – aligned to bottom of text block */}
+          <div className="hidden md:flex items-end self-stretch pb-[3.5rem]">
+            <div className="w-64 lg:w-72 rounded-2xl overflow-hidden shadow-lg">
+              <img
+                src={feliciaImg}
+                alt="Felicia Edvinsson"
+                className="w-full h-auto object-cover object-top grayscale contrast-110 rounded-2xl"
+              />
+            </div>
+          </div>
+
           {/* Text content */}
           <div className="flex flex-col">
             <h2 className="text-3xl md:text-4xl font-bold mb-8">Om Mig</h2>
@@ -32,19 +43,7 @@ const AboutSection = () => {
               </Button>
             </div>
           </div>
-
-          {/* Image – aligned to bottom of text block */}
-          <div className="hidden md:flex items-end self-stretch pb-[3.5rem]">
-            <div className="w-64 lg:w-72 rounded-2xl overflow-hidden shadow-lg">
-              <img
-                src={feliciaImg}
-                alt="Felicia Edvinsson"
-                className="w-full h-auto object-cover object-top grayscale contrast-110 rounded-2xl"
-              />
-            </div>
-          </div>
         </div>
-      </div>
     </section>
   );
 };
