@@ -6,6 +6,7 @@ import mockupNaturfoto from "@/assets/mockup-naturfoto.png";
 import mockupKortfilm from "@/assets/mockup-kortfilm.png";
 import mockupKulturkomp from "@/assets/mockup-kulturkomp.jpg";
 import mockupMotorcentralen from "@/assets/mockup-motorcentralen.jpg";
+import mockupIntext from "@/assets/mockup-intext.png";
 
 export interface Project {
   id: string;
@@ -126,5 +127,17 @@ export const projects: Project[] = [
     images: ["/placeholder.svg", "/placeholder.svg"],
     process: "Projektet kombinerade fotografi och videoproduktion för att skapa visuellt material.",
     tools: ["Adobe After Effects", "Adobe Lightroom", "Adobe Photoshop"],
+  },
+  {
+    id: "intext-designstudio",
+    title: "Intext designstudio",
+    category: "Illustration",
+    categories: ["Illustration"],
+    description: "En poster jag skapade under min praktik hos Chillimedia, som sedan gavs till en av deras kunder.",
+    tags: ["Adobe Illustrator", "Adobe Photoshop"],
+    thumbnail: mockupIntext,
+    images: ["/placeholder.svg", "/placeholder.svg"],
+    process: "Projektet inkluderade konceptutveckling och grafisk produktion för att skapa en unik poster.",
+    tools: ["Adobe Illustrator", "Adobe Photoshop"],
   },
 ];
