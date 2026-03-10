@@ -1,4 +1,6 @@
 import mockupNordvag from "@/assets/mockup-nordvag.png";
+import tornedalensFoto1 from "@/assets/tornedalens-foto-1.jpg";
+import tornedalensFoto2 from "@/assets/tornedalens-foto-2.jpg";
 import mockupTradgardDetail from "@/assets/mockup-tradgard-detail.png";
 import mockupTradgard from "@/assets/mockup-tradgard.png";
 import mockupVisitkort from "@/assets/mockup-visitkort.png";
