@@ -39,6 +39,11 @@ export interface ProcessGallery {
   images: string[];
 }
 
+export interface Interstitial {
+  title: string;
+  text: string;
+}
+
 export interface Project {
   id: string;
   title: string;
@@ -47,6 +52,8 @@ export interface Project {
   description: string;
   tags: string[];
   thumbnail: string;
+  topImages?: string[];
+  interstitial?: Interstitial;
   images: string[];
   videoUrl?: string;
   process: string;
