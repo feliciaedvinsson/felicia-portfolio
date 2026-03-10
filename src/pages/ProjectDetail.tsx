@@ -118,6 +118,17 @@ const ProjectDetail = () => {
         <h1 className="text-4xl md:text-5xl font-bold mb-6">{project.title}</h1>
         <p className="text-lg text-muted-foreground mb-10 max-w-2xl">{project.description}</p>
 
+        {/* Process */}
+        <div className="mb-12">
+          <h2 className="text-2xl font-bold mb-4">Process</h2>
+          <p className="text-muted-foreground leading-relaxed whitespace-pre-line">{project.process}</p>
+        </div>
+
+        {/* Process Galleries */}
+        {project.processGalleries?.map((gallery, gi) => (
+          <ProcessCarousel key={gi} title={gallery.title} images={gallery.images} projectTitle={project.title} />
+        ))}
+
         {/* Top Images (side by side) */}
         {project.topImages && project.topImages.length > 0 && (
           <div className="grid grid-cols-3 gap-4 mb-8">
@@ -174,17 +185,6 @@ const ProjectDetail = () => {
             />
           </div>
         )}
-
-        {/* Process */}
-        <div className="mb-12">
-          <h2 className="text-2xl font-bold mb-4">Process</h2>
-          <p className="text-muted-foreground leading-relaxed whitespace-pre-line">{project.process}</p>
-        </div>
-
-        {/* Process Galleries */}
-        {project.processGalleries?.map((gallery, gi) => (
-          <ProcessCarousel key={gi} title={gallery.title} images={gallery.images} projectTitle={project.title} />
-        ))}
 
         {/* Links */}
         {project.links && project.links.length > 0 && (
