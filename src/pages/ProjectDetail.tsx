@@ -133,8 +133,8 @@ const ProjectDetail = () => {
         {project.topImages && project.topImages.length > 0 && (
           <div className="grid grid-cols-3 gap-4 mb-8">
             {project.topImages.map((img, i) => (
-              <div key={i} className="rounded-xl overflow-hidden bg-muted aspect-[4/5]">
-                <img src={img} alt={`${project.title} omslag ${i + 1}`} className="w-full h-full object-cover" />
+              <div key={i} className="rounded-xl overflow-hidden bg-muted">
+                <img src={img} alt={`${project.title} omslag ${i + 1}`} className="w-full h-auto object-contain" />
               </div>
             ))}
           </div>
