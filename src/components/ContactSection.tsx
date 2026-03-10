@@ -68,9 +68,9 @@ const ContactSection = () => {
             />
           </div>
           <div className="flex flex-col sm:flex-row gap-4">
-            <Button type="submit" className="rounded-full px-8 gap-2">
-              <Send className="w-4 h-4" />
-              Skicka meddelande
+            <Button type="submit" className="rounded-full px-8 gap-2" disabled={sending}>
+              {sending ? <Loader2 className="w-4 h-4 animate-spin" /> : <Send className="w-4 h-4" />}
+              {sending ? "Skickar..." : "Skicka meddelande"}
             </Button>
             <Button asChild variant="outline" className="rounded-full px-8 gap-2">
               <a href="/cv.pdf" download>
