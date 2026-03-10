@@ -120,7 +120,7 @@ const ProjectDetail = () => {
 
         {/* Process */}
         <div className="mb-12">
-          <h2 className="text-2xl font-bold mb-4">Process</h2>
+          <h2 className="text-2xl font-bold mb-4">{project.processTitle || "Process"}</h2>
           <p className="text-muted-foreground leading-relaxed whitespace-pre-line">{project.process}</p>
         </div>
 
