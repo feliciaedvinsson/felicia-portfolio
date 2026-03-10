@@ -150,21 +150,10 @@ const ProjectDetail = () => {
 
         {/* Media Row */}
         {project.mediaRow && (
-          <div className="grid grid-cols-3 gap-4 mb-8">
+          <div className="grid grid-cols-2 gap-4 mb-8">
             {project.mediaRow.items.map((item, i) => (
               <div key={i} className="rounded-xl overflow-hidden bg-muted">
-                {item.type === "video" ? (
-                  <video
-                    src={item.src}
-                    autoPlay
-                    loop
-                    muted
-                    playsInline
-                    className="w-full h-auto"
-                  />
-                ) : (
-                  <img src={item.src} alt={`${project.title} media ${i + 1}`} className="w-full h-auto" />
-                )}
+                <img src={item.src} alt={`${project.title} media ${i + 1}`} className="w-full h-auto" />
               </div>
             ))}
           </div>
