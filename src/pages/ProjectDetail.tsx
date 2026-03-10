@@ -144,9 +144,15 @@ const ProjectDetail = () => {
         </div>
 
         {/* Video placeholder */}
-        {project.videoUrl !== undefined && (
-          <div className="rounded-xl overflow-hidden bg-muted aspect-video mb-12 flex items-center justify-center">
-            <p className="text-muted-foreground text-sm">Video kommer snart</p>
+        {project.videoUrl && (
+          <div className="rounded-xl overflow-hidden bg-muted aspect-video mb-12">
+            <iframe
+              src={project.videoUrl}
+              title={project.title}
+              className="w-full h-full"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            />
           </div>
         )}
 
