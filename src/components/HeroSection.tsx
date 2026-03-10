@@ -28,7 +28,7 @@ const HeroSection = () => {
             <a href="#projekt">Se projekt</a>
           </Button>
           <Button asChild variant="outline" size="lg" className="rounded-full px-6 sm:px-8 text-sm sm:text-base">
-            <a href="#kontakt">Kontakta Mig</a>
+            <a href="#kontakt">Kontakta mig</a>
           </Button>
         </div>
       </div>
