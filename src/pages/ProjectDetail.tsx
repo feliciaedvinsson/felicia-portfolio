@@ -2,12 +2,29 @@ import { useParams, useNavigate } from "react-router-dom";
 import { projects } from "@/data/projects";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, ExternalLink, ChevronLeft, ChevronRight } from "lucide-react";
-import { useState } from "react";
+import { useState, useEffect, useCallback } from "react";
+
+const AUTO_PLAY_INTERVAL = 4000;
 
 const ProcessCarousel = ({ title, images, projectTitle }: { title: string; images: string[]; projectTitle: string }) => {
   const [current, setCurrent] = useState(0);
-  const prev = () => setCurrent((c) => (c === 0 ? images.length - 1 : c - 1));
-  const next = () => setCurrent((c) => (c === images.length - 1 ? 0 : c + 1));
+  const [isAutoPlaying, setIsAutoPlaying] = useState(true);
+
+  const prev = useCallback(() => setCurrent((c) => (c === 0 ? images.length - 1 : c - 1)), [images.length]);
+  const next = useCallback(() => setCurrent((c) => (c === images.length - 1 ? 0 : c + 1)), [images.length]);
+
+  useEffect(() => {
+    if (!isAutoPlaying) return;
+    const timer = setInterval(next, AUTO_PLAY_INTERVAL);
+    return () => clearInterval(timer);
+  }, [isAutoPlaying, next]);
+
+  const handleManualNav = (fn: () => void) => {
+    setIsAutoPlaying(false);
+    fn();
+    // Resume auto-play after 8s of inactivity
+    setTimeout(() => setIsAutoPlaying(true), 8000);
+  };
 
   const getIndex = (offset: number) => {
     return (current + offset + images.length) % images.length;
@@ -34,7 +51,7 @@ const ProcessCarousel = ({ title, images, projectTitle }: { title: string; image
           return (
             <div
               key={`${offset}-${index}`}
-              className="absolute transition-all duration-500 ease-out cursor-pointer"
+              className="absolute transition-all duration-700 ease-[cubic-bezier(0.4,0,0.2,1)] cursor-pointer"
               style={{
                 transform: `translateX(${translateX}px) translateZ(${translateZ}px) rotateY(${rotateY}deg) scale(${scale})`,
                 zIndex,
@@ -42,8 +59,8 @@ const ProcessCarousel = ({ title, images, projectTitle }: { title: string; image
                 filter: `blur(${blur}px)`,
               }}
               onClick={() => {
-                if (offset < 0) prev();
-                else if (offset > 0) next();
+                if (offset < 0) handleManualNav(prev);
+                else if (offset > 0) handleManualNav(next);
               }}
             >
               <img
@@ -56,19 +73,37 @@ const ProcessCarousel = ({ title, images, projectTitle }: { title: string; image
         })}
 
         <button
-          onClick={prev}
+          onClick={() => handleManualNav(prev)}
           className="absolute left-2 z-20 bg-background/80 backdrop-blur-sm rounded-full p-2 shadow hover:bg-background transition"
           aria-label="Previous"
         >
           <ChevronLeft className="w-5 h-5" />
         </button>
         <button
-          onClick={next}
+          onClick={() => handleManualNav(next)}
           className="absolute right-2 z-20 bg-background/80 backdrop-blur-sm rounded-full p-2 shadow hover:bg-background transition"
           aria-label="Next"
         >
           <ChevronRight className="w-5 h-5" />
         </button>
+      </div>
+
+      {/* Dot indicators */}
+      <div className="flex justify-center gap-2 mt-4">
+        {images.map((_, i) => (
+          <button
+            key={i}
+            onClick={() => {
+              handleManualNav(() => setCurrent(i));
+            }}
+            className={`w-2.5 h-2.5 rounded-full transition-all duration-300 ${
+              i === current
+                ? "bg-primary scale-125"
+                : "bg-muted-foreground/30 hover:bg-muted-foreground/50"
+            }`}
+            aria-label={`Go to slide ${i + 1}`}
+          />
+        ))}
       </div>
     </div>
   );
