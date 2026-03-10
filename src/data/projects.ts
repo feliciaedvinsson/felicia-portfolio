@@ -225,7 +225,7 @@ export const projects: Project[] = [
     tags: ["Adobe XD"],
     thumbnail: mockupKulturkomp,
     images: ["/placeholder.svg", "/placeholder.svg"],
-    process: "Projektet fokuserade på att skapa en användarvänlig app-prototyp för att utforska svenska kulturminnen.",
+    process: "Kulturkompassen är en prototyp som skapades tillsammans med Lisa Sjöström och Aleksandar Praizovic, som en del av ett skolprojekt.\n\nProjektets syfte var att skapa en prototyp för en mobilapp för att främja kulturminnen i Sverige\n\nMer information kommer snart..",
     tools: ["Adobe XD"],
   },
   {
