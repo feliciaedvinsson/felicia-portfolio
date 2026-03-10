@@ -19,6 +19,8 @@ import dermosilOmslag3 from "@/assets/dermosil-omslag-3.jpg";
 import dermosilKampanj1 from "@/assets/dermosil-kampanj-1.jpg";
 import dermosilKampanj2 from "@/assets/dermosil-kampanj-2.jpg";
 import dermosilKampanjVideo from "@/assets/dermosil-kampanj.mp4";
+import dermosilKampanjVideo2 from "@/assets/dermosil-kampanj-video-1.mp4";
+import dermosilJulVideo from "@/assets/dermosil-jul-video.mp4";
 import motorcentralenDetail1 from "@/assets/motorcentralen-detail-1.png";
 import motorcentralenDetail2 from "@/assets/motorcentralen-detail-2.png";
 import motorcentralenDetail3 from "@/assets/motorcentralen-detail-3.jpg";
@@ -47,13 +49,22 @@ export interface Interstitial {
   text: string;
 }
 
+export interface MediaItem {
+  type: "image" | "video";
+  src: string;
+  autoPlay?: boolean;
+  loop?: boolean;
+  muted?: boolean;
+}
+
 export interface MediaRow {
-  items: { type: "image" | "video"; src: string }[];
+  items: MediaItem[];
 }
 
 export interface BottomSection {
   title: string;
   text: string;
+  videos?: MediaItem[];
 }
 
 export interface Project {
@@ -143,6 +154,10 @@ export const projects: Project[] = [
     bottomSection: {
       title: "Kampanjmaterial för sociala medier",
       text: "Utöver konceptarbetet togs även kampanjmaterial fram för sociala medier. Materialet bestod av grafik och video anpassat för olika plattformar, med fokus på att kommunicera erbjudanden och produkter på ett visuellt tilltalande sätt som passar den svenska marknaden.",
+      videos: [
+        { type: "video", src: dermosilKampanjVideo2, autoPlay: true, loop: true, muted: true },
+        { type: "video", src: dermosilJulVideo, autoPlay: false, loop: false, muted: false },
+      ],
     },
     images: ["/placeholder.svg", "/placeholder.svg"],
     processTitle: "Uppdrag",
