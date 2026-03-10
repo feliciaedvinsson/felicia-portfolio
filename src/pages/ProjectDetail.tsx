@@ -169,10 +169,10 @@ const ProjectDetail = () => {
 
             }
             if (isLastPair && i === project.images.length - 1) return null;
-            return (
-              <div key={i} className="rounded-xl overflow-hidden bg-muted aspect-video">
-                  
-                </div>);
+            return;
+
+
+
 
           })}
           </div>
