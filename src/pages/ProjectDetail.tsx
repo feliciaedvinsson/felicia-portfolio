@@ -144,7 +144,37 @@ const ProjectDetail = () => {
         {project.interstitial && (
           <div className="mb-10">
             <h2 className="text-2xl font-bold mb-3">{project.interstitial.title}</h2>
-            <p className="text-muted-foreground leading-relaxed">{project.interstitial.text}</p>
+            <p className="text-muted-foreground leading-relaxed whitespace-pre-line">{project.interstitial.text}</p>
+          </div>
+        )}
+
+        {/* Media Row */}
+        {project.mediaRow && (
+          <div className="grid grid-cols-3 gap-4 mb-8">
+            {project.mediaRow.items.map((item, i) => (
+              <div key={i} className="rounded-xl overflow-hidden bg-muted aspect-[4/5]">
+                {item.type === "video" ? (
+                  <video
+                    src={item.src}
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    className="w-full h-full object-cover"
+                  />
+                ) : (
+                  <img src={item.src} alt={`${project.title} media ${i + 1}`} className="w-full h-full object-cover" />
+                )}
+              </div>
+            ))}
+          </div>
+        )}
+
+        {/* Bottom Section */}
+        {project.bottomSection && (
+          <div className="mb-12">
+            <h2 className="text-2xl font-bold mb-3">{project.bottomSection.title}</h2>
+            <p className="text-muted-foreground leading-relaxed whitespace-pre-line">{project.bottomSection.text}</p>
           </div>
         )}
 
