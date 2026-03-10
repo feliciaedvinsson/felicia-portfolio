@@ -133,6 +133,18 @@ export const projects: Project[] = [
     tools: ["Adobe Lightroom", "Adobe Illustrator", "Adobe After Effects", "Adobe Photoshop"],
   },
   {
+    id: "gestaltning-praktik",
+    title: "Gestaltning av praktik",
+    category: "Motion & Video",
+    categories: ["Motion & Video"],
+    description: "En gestaltande motion graphic om mina erfarenheter hos min praktikplats, Chillimedia. Detta var en uppgift under min utbildning.",
+    tags: ["Adobe After Effects"],
+    thumbnail: mockupChillimedia,
+    images: ["/placeholder.svg"],
+    process: "Mer information kommer snart.",
+    tools: ["Adobe After Effects"],
+  },
+  {
     id: "film-kortfilm",
     title: "Motorcentralen",
     category: "Illustration",
