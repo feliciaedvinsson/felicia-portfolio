@@ -47,6 +47,15 @@ export interface Interstitial {
   text: string;
 }
 
+export interface MediaRow {
+  items: { type: "image" | "video"; src: string }[];
+}
+
+export interface BottomSection {
+  title: string;
+  text: string;
+}
+
 export interface Project {
   id: string;
   title: string;
