@@ -43,7 +43,7 @@ const AboutSection = () => {
 
           {/* Text content */}
           <div className="flex flex-col">
-            <h2 className="text-3xl md:text-4xl font-bold mb-8">Om Mig</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-8">Om mig</h2>
             <div className="space-y-5 text-muted-foreground leading-relaxed">
               <p>Jag är en designer med en passion för UI- och grafisk design. Ända sedan jag var liten har jag älskat att vara kreativ på olika sätt, och än idag hittar jag ofta nya saker att pyssla med och hobbys att hänge mig till. Jag har god teknisk kompetens inom flera designverktyg, bland annat Adobe Illustrator, Adobe After Effects, Procreate, Figma och Canva. Dessutom har jag grundläggande kunskaper i kodning med HTML och CSS, vilket ger mig en bättre förståelse för hur design och utveckling möts i digitala projekt.
               </p>

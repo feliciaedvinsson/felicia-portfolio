@@ -13,7 +13,7 @@ const ProjectsSection = () => {
   return (
     <section id="projekt" className="py-24 px-6">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">Mina Projekt</h2>
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">Mina projekt</h2>
         <p className="text-center text-muted-foreground mb-12 max-w-lg mx-auto">
           Ett urval av mina senaste arbeten inom design, foto, animation och illustration.
         </p>

@@ -18,7 +18,7 @@ const ContactSection = () => {
   return (
     <section id="kontakt" className="py-24 px-6 bg-secondary/30">
       <div className="max-w-2xl mx-auto text-center">
-        <h2 className="text-3xl md:text-4xl font-bold mb-4">Kontakta Mig</h2>
+        <h2 className="text-3xl md:text-4xl font-bold mb-4">Kontakta mig</h2>
         <p className="text-muted-foreground mb-12">
           Har du ett projekt i åtanke eller vill veta mer? Skicka ett meddelande!
         </p>
