@@ -159,7 +159,7 @@ export const projects: Project[] = [
         { type: "video", src: dermosilJulVideo, autoPlay: false, loop: false, muted: false },
       ],
     },
-    images: ["/placeholder.svg", "/placeholder.svg"],
+    images: [],
     processTitle: "Uppdrag",
     process: "I projektet fick jag möjlighet att arbeta med ett större projekt inför en pitch till en ny kund. Tillsammans med två medarbetare ansvarade jag för att ta fram visuellt och konceptuellt material som skulle presenteras under pitchen.\n\nKunden var ett finskt företag som ville etablera sig starkare på den svenska marknaden. Vårt uppdrag var därför att utveckla idéer och koncept som kunde hjälpa företaget att nå en svensk målgrupp. En viktig del av arbetet var att anpassa  deras befintliga innehåll för sociala medier, både i tonalitet och visuellt uttryck.\n\nFokus låg på att introducera företaget till en svensk publik, lyfta fram deras produkter på ett tydligt sätt och skapa innehåll som kändes relevant för den svenska marknaden. Genom konceptförslag och visuellt material visade vi hur företaget kunde kommunicera sitt varumärke och sina produkter på ett sätt som bättre tilltalar svenska konsumenter.",
     tools: ["Adobe Illustrator", "Adobe After Effects", "Adobe Photoshop"],
