@@ -73,7 +73,7 @@ const ContactSection = () => {
               {sending ? "Skickar..." : "Skicka meddelande"}
             </Button>
             <Button asChild variant="outline" className="rounded-full px-8 gap-2">
-              <a href="/CV_Felicia_Edvinsson.pdf" download>
+              <a href="/cv.pdf" download>
                 <Download className="w-4 h-4" />
                 Ladda ner CV
               </a>
