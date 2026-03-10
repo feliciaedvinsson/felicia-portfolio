@@ -237,7 +237,8 @@ export const projects: Project[] = [
     tags: ["Adobe After Effects", "Adobe Lightroom", "Adobe Photoshop"],
     thumbnail: mockupMotorcentralen,
     images: ["/placeholder.svg", "/placeholder.svg"],
-    process: "Projektet kombinerade fotografi och videoproduktion för att skapa visuellt material.",
+    processTitle: "Innehåll för sociala medier",
+    process: "Under min praktik hos Chillimedia arbetade jag med innehåll till en av deras kunder, där Chillimedia ansvarade för företagets sociala medier. Jag redigerade både bilder och video som skulle publiceras i deras kanaler, med fokus på att skapa material som var visuellt tilltalande och anpassat för plattformarna.\n\nJag var även delaktig i planeringen av innehållet och schemalade delar av publiceringarna, vilket gav mig erfarenhet av hur sociala medier kan struktureras strategiskt för att skapa ett jämnt och genomtänkt flöde.",
     tools: ["Adobe After Effects", "Adobe Lightroom", "Adobe Photoshop"],
   },
   {
