@@ -49,12 +49,7 @@ const ProcessCarousel = ({ title, images, projectTitle }: { title: string; image
               <img
                 src={images[index]}
                 alt={`${projectTitle} - ${title} ${index + 1}`}
-                className="w-[340px] md:w-[480px] h-[255px] md:h-[360px] object-contain rounded-xl"
-                style={{
-                  boxShadow: isCenter
-                    ? '0 25px 60px -12px rgba(0, 0, 0, 0.5)'
-                    : '0 15px 40px -8px rgba(0, 0, 0, 0.3)',
-                }}
+                className="rounded-xl shadow-lg max-h-[400px] md:max-h-[500px] w-auto object-contain"
               />
             </div>
           );
@@ -62,21 +57,18 @@ const ProcessCarousel = ({ title, images, projectTitle }: { title: string; image
 
         <button
           onClick={prev}
-          className="absolute left-2 md:left-8 top-1/2 -translate-y-1/2 z-20 bg-background/60 backdrop-blur-sm rounded-full p-2 hover:bg-background/90 transition-colors border border-border/30"
-          aria-label="Föregående"
+          className="absolute left-2 z-20 bg-background/80 backdrop-blur-sm rounded-full p-2 shadow hover:bg-background transition"
+          aria-label="Previous"
         >
           <ChevronLeft className="w-5 h-5" />
         </button>
         <button
           onClick={next}
-          className="absolute right-2 md:right-8 top-1/2 -translate-y-1/2 z-20 bg-background/60 backdrop-blur-sm rounded-full p-2 hover:bg-background/90 transition-colors border border-border/30"
-          aria-label="Nästa"
+          className="absolute right-2 z-20 bg-background/80 backdrop-blur-sm rounded-full p-2 shadow hover:bg-background transition"
+          aria-label="Next"
         >
           <ChevronRight className="w-5 h-5" />
         </button>
-      </div>
-      <div className="text-center mt-4 text-sm text-muted-foreground">
-        {current + 1} / {images.length}
       </div>
     </div>
   );
@@ -117,6 +109,33 @@ const ProjectDetail = () => {
         </p>
         <h1 className="text-4xl md:text-5xl font-bold mb-6">{project.title}</h1>
         <p className="text-lg text-muted-foreground mb-10 max-w-2xl">{project.description}</p>
+
+        {/* Images - moved to right after description */}
+        {project.images.length > 0 && (
+          <div className="grid gap-6 mb-12">
+            {project.images.map((img, i) => {
+              const isLastPair = project.images.length >= 3 && i >= project.images.length - 2;
+              if (isLastPair && i === project.images.length - 2) {
+                return (
+                  <div key={i} className="grid grid-cols-2 gap-6 col-span-full">
+                    <div className="rounded-xl overflow-hidden bg-muted aspect-[3/4]">
+                      <img src={project.images[i]} alt={`${project.title} ${i + 1}`} className="w-full h-full object-cover" />
+                    </div>
+                    <div className="rounded-xl overflow-hidden bg-muted aspect-[3/4]">
+                      <img src={project.images[i + 1]} alt={`${project.title} ${i + 2}`} className="w-full h-full object-cover" />
+                    </div>
+                  </div>
+                );
+              }
+              if (isLastPair && i === project.images.length - 1) return null;
+              return (
+                <div key={i} className="rounded-xl overflow-hidden bg-muted aspect-video">
+                  <img src={img} alt={`${project.title} ${i + 1}`} className="w-full h-full object-cover" />
+                </div>
+              );
+            })}
+          </div>
+        )}
 
         {/* Process */}
         <div className="mb-12">
@@ -183,31 +202,6 @@ const ProjectDetail = () => {
             )}
           </div>
         )}
-
-        {/* Images */}
-        <div className="grid gap-6 mb-12">
-          {project.images.map((img, i) => {
-            const isLastPair = project.images.length >= 3 && i >= project.images.length - 2;
-            if (isLastPair && i === project.images.length - 2) {
-              return (
-                <div key={i} className="grid grid-cols-2 gap-6 col-span-full">
-                  <div className="rounded-xl overflow-hidden bg-muted aspect-[3/4]">
-                    <img src={project.images[i]} alt={`${project.title} ${i + 1}`} className="w-full h-full object-cover" />
-                  </div>
-                  <div className="rounded-xl overflow-hidden bg-muted aspect-[3/4]">
-                    <img src={project.images[i + 1]} alt={`${project.title} ${i + 2}`} className="w-full h-full object-cover" />
-                  </div>
-                </div>
-              );
-            }
-            if (isLastPair && i === project.images.length - 1) return null;
-            return (
-              <div key={i} className="rounded-xl overflow-hidden bg-muted aspect-video">
-                <img src={img} alt={`${project.title} ${i + 1}`} className="w-full h-full object-cover" />
-              </div>
-            );
-          })}
-        </div>
 
         {/* Video placeholder */}
         {project.videoUrl && (
