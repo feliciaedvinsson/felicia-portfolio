@@ -2,17 +2,31 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Download, Send, Instagram, Linkedin, Mail } from "lucide-react";
+import { Download, Send, Instagram, Linkedin, Mail, Loader2 } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
+import { supabase } from "@/integrations/supabase/client";
 
 const ContactSection = () => {
   const { toast } = useToast();
   const [form, setForm] = useState({ name: "", email: "", message: "" });
+  const [sending, setSending] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    toast({ title: "Meddelande skickat!", description: "Tack för ditt meddelande. Jag återkommer snart." });
-    setForm({ name: "", email: "", message: "" });
+    setSending(true);
+    try {
+      const { data, error } = await supabase.functions.invoke("send-contact-email", {
+        body: { name: form.name, email: form.email, message: form.message },
+      });
+      if (error) throw error;
+      toast({ title: "Meddelande skickat!", description: "Tack för ditt meddelande. Jag återkommer snart." });
+      setForm({ name: "", email: "", message: "" });
+    } catch (err) {
+      console.error("Failed to send email:", err);
+      toast({ title: "Något gick fel", description: "Kunde inte skicka meddelandet. Försök igen.", variant: "destructive" });
+    } finally {
+      setSending(false);
+    }
   };
 
   return (
