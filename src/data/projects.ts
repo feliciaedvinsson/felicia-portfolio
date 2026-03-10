@@ -47,13 +47,22 @@ export interface Interstitial {
   text: string;
 }
 
+export interface MediaItem {
+  type: "image" | "video";
+  src: string;
+  autoPlay?: boolean;
+  loop?: boolean;
+  muted?: boolean;
+}
+
 export interface MediaRow {
-  items: { type: "image" | "video"; src: string }[];
+  items: MediaItem[];
 }
 
 export interface BottomSection {
   title: string;
   text: string;
+  videos?: MediaItem[];
 }
 
 export interface Project {
