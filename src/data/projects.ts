@@ -114,6 +114,11 @@ export const projects: Project[] = [
     description: "Ett projekt jag arbetade i, under min praktik hos Chillimedia.",
     tags: ["Adobe Illustrator", "Adobe After Effects", "Adobe Photoshop"],
     thumbnail: mockupVisitkort,
+    topImages: [dermosilOmslag1, dermosilOmslag2, dermosilOmslag3],
+    interstitial: {
+      title: "Framtagning av koncept",
+      text: "Jag, tillsammans med två medarbetare på Chillimedia tog fram ett koncept med målet att kunden skulle introduceras till den svenska marknaden. Konceptets namn var \"Dejta Dermosil\", och skulle bestå av en reel serie på sociala medier där man lär känna företaget. Jag tog fram tre förslag på omslag för konceptet, som skulle användas på sociala medier för att markera serien och ge en känsla av innehållet.",
+    },
     images: ["/placeholder.svg", "/placeholder.svg"],
     process: "Konceptet utvecklades genom skisser och moodboards innan den digitala produktionen.",
     tools: ["Adobe Illustrator", "Adobe After Effects", "Adobe Photoshop"],
