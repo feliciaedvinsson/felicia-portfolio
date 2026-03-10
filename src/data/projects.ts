@@ -12,6 +12,7 @@ import mockupKulturkomp from "@/assets/mockup-kulturkomp.jpg";
 import mockupMotorcentralen from "@/assets/mockup-motorcentralen.jpg";
 import mockupIntext from "@/assets/mockup-intext.png";
 import mockupEpson from "@/assets/mockup-epson.png";
+import mockupChillimedia from "@/assets/mockup-chillimedia.png";
 import motorcentralenDetail1 from "@/assets/motorcentralen-detail-1.png";
 import motorcentralenDetail2 from "@/assets/motorcentralen-detail-2.png";
 import motorcentralenDetail3 from "@/assets/motorcentralen-detail-3.jpg";
