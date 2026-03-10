@@ -12,6 +12,7 @@ import mockupKulturkomp from "@/assets/mockup-kulturkomp.jpg";
 import mockupMotorcentralen from "@/assets/mockup-motorcentralen.jpg";
 import mockupIntext from "@/assets/mockup-intext.png";
 import mockupEpson from "@/assets/mockup-epson.png";
+import mockupChillimedia from "@/assets/mockup-chillimedia.png";
 import motorcentralenDetail1 from "@/assets/motorcentralen-detail-1.png";
 import motorcentralenDetail2 from "@/assets/motorcentralen-detail-2.png";
 import motorcentralenDetail3 from "@/assets/motorcentralen-detail-3.jpg";
@@ -130,6 +131,18 @@ export const projects: Project[] = [
     images: ["/placeholder.svg", "/placeholder.svg"],
     process: "Bilderna togs under flera månader för att fånga olika ljusförhållanden och årstider.",
     tools: ["Adobe Lightroom", "Adobe Illustrator", "Adobe After Effects", "Adobe Photoshop"],
+  },
+  {
+    id: "gestaltning-praktik",
+    title: "Gestaltning av praktik",
+    category: "Motion & Video",
+    categories: ["Motion & Video"],
+    description: "En gestaltande motion graphic om mina erfarenheter hos min praktikplats, Chillimedia. Detta var en uppgift under min utbildning.",
+    tags: ["Adobe After Effects"],
+    thumbnail: mockupChillimedia,
+    images: ["/placeholder.svg"],
+    process: "Mer information kommer snart.",
+    tools: ["Adobe After Effects"],
   },
   {
     id: "film-kortfilm",
