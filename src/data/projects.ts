@@ -19,6 +19,8 @@ import dermosilOmslag3 from "@/assets/dermosil-omslag-3.jpg";
 import dermosilKampanj1 from "@/assets/dermosil-kampanj-1.jpg";
 import dermosilKampanj2 from "@/assets/dermosil-kampanj-2.jpg";
 import dermosilKampanjVideo from "@/assets/dermosil-kampanj.mp4";
+import dermosilKampanjVideo2 from "@/assets/dermosil-kampanj-video-1.mp4";
+import dermosilJulVideo from "@/assets/dermosil-jul-video.mp4";
 import motorcentralenDetail1 from "@/assets/motorcentralen-detail-1.png";
 import motorcentralenDetail2 from "@/assets/motorcentralen-detail-2.png";
 import motorcentralenDetail3 from "@/assets/motorcentralen-detail-3.jpg";
