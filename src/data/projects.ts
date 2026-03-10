@@ -137,7 +137,6 @@ export const projects: Project[] = [
     mediaRow: {
       items: [
         { type: "image", src: dermosilKampanj1 },
-        { type: "video", src: dermosilKampanjVideo },
         { type: "image", src: dermosilKampanj2 },
       ],
     },
