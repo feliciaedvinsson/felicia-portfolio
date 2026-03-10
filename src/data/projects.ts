@@ -154,6 +154,10 @@ export const projects: Project[] = [
     bottomSection: {
       title: "Kampanjmaterial för sociala medier",
       text: "Utöver konceptarbetet togs även kampanjmaterial fram för sociala medier. Materialet bestod av grafik och video anpassat för olika plattformar, med fokus på att kommunicera erbjudanden och produkter på ett visuellt tilltalande sätt som passar den svenska marknaden.",
+      videos: [
+        { type: "video", src: dermosilKampanjVideo2, autoPlay: true, loop: true, muted: true },
+        { type: "video", src: dermosilJulVideo, autoPlay: false, loop: false, muted: false },
+      ],
     },
     images: ["/placeholder.svg", "/placeholder.svg"],
     processTitle: "Uppdrag",
