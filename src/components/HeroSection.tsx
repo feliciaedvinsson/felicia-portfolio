@@ -25,7 +25,7 @@ const HeroSection = () => {
         </p>
         <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
           <Button asChild size="lg" className="rounded-full px-6 sm:px-8 text-sm sm:text-base">
-            <a href="#projekt">Se Projekt</a>
+            <a href="#projekt">Se projekt</a>
           </Button>
           <Button asChild variant="outline" size="lg" className="rounded-full px-6 sm:px-8 text-sm sm:text-base">
             <a href="#kontakt">Kontakta Mig</a>
