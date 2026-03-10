@@ -16,6 +16,9 @@ import mockupChillimedia from "@/assets/mockup-chillimedia.png";
 import dermosilOmslag1 from "@/assets/dermosil-omslag-1.jpg";
 import dermosilOmslag2 from "@/assets/dermosil-omslag-2.jpg";
 import dermosilOmslag3 from "@/assets/dermosil-omslag-3.jpg";
+import dermosilKampanj1 from "@/assets/dermosil-kampanj-1.jpg";
+import dermosilKampanj2 from "@/assets/dermosil-kampanj-2.jpg";
+import dermosilKampanjVideo from "@/assets/dermosil-kampanj.mp4";
 import motorcentralenDetail1 from "@/assets/motorcentralen-detail-1.png";
 import motorcentralenDetail2 from "@/assets/motorcentralen-detail-2.png";
 import motorcentralenDetail3 from "@/assets/motorcentralen-detail-3.jpg";
@@ -44,6 +47,15 @@ export interface Interstitial {
   text: string;
 }
 
+export interface MediaRow {
+  items: { type: "image" | "video"; src: string }[];
+}
+
+export interface BottomSection {
+  title: string;
+  text: string;
+}
+
 export interface Project {
   id: string;
   title: string;
@@ -59,6 +71,8 @@ export interface Project {
   processTitle?: string;
   process: string;
   processGalleries?: ProcessGallery[];
+  mediaRow?: MediaRow;
+  bottomSection?: BottomSection;
   tools: string[];
   links?: ProjectLink[];
 }
@@ -119,6 +133,17 @@ export const projects: Project[] = [
     interstitial: {
       title: "Framtagning av koncept",
       text: "Som en del av projektet tog vi fram ett koncept för sociala medier med namnet \"Dejta Dermosil\". Idén var att skapa en serie reels där publiken på ett lättsamt och engagerande sätt får lära känna företaget, dess produkter och varumärke, som att \"dejta\" företaget och steg för steg upptäcka vad de erbjuder.\n\nArbetet började med en gemensam kreativ process där vi brainstormade fram olika idéer och koncept kring hur företaget skulle kunna introduceras för en svensk publik. Vi skissade på flera olika riktningar, testade tankar och utvecklade dem vidare. Under processen itererade vi mycket, vissa idéer omarbetades, andra byttes ut helt, tills vi till slut landade i konceptet \"Dejta Dermosil\".\n\nMin roll i projektet blev sedan att ta fram tre olika förslag på omslag till serien. Omslagen var tänkta att användas på sociala medier för att tydligt markera att inläggen tillhör serien och samtidigt ge en känsla för innehållet. I designen fokuserade jag på att skapa något som var igenkännbart, visuellt tilltalande och som kunde fungera konsekvent genom hela reel-serien.",
+    },
+    mediaRow: {
+      items: [
+        { type: "image", src: dermosilKampanj1 },
+        { type: "video", src: dermosilKampanjVideo },
+        { type: "image", src: dermosilKampanj2 },
+      ],
+    },
+    bottomSection: {
+      title: "Kampanjmaterial för sociala medier",
+      text: "Utöver konceptarbetet togs även kampanjmaterial fram för sociala medier. Materialet bestod av grafik och video anpassat för olika plattformar, med fokus på att kommunicera erbjudanden och produkter på ett visuellt tilltalande sätt som passar den svenska marknaden.",
     },
     images: ["/placeholder.svg", "/placeholder.svg"],
     processTitle: "Uppdrag",
