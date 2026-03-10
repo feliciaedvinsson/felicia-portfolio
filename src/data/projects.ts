@@ -140,7 +140,7 @@ export const projects: Project[] = [
     description: "En gestaltande motion graphic om mina erfarenheter hos min praktikplats, Chillimedia. Detta var en uppgift under min utbildning.",
     tags: ["Adobe After Effects"],
     thumbnail: mockupChillimedia,
-    images: ["/placeholder.svg"],
+    images: [],
     videoUrl: "https://www.youtube.com/embed/gPHQSxEfa5Y",
     process: "Mer information kommer snart.",
     tools: ["Adobe After Effects"],
