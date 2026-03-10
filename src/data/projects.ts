@@ -13,6 +13,9 @@ import mockupMotorcentralen from "@/assets/mockup-motorcentralen.jpg";
 import mockupIntext from "@/assets/mockup-intext.png";
 import mockupEpson from "@/assets/mockup-epson.png";
 import mockupChillimedia from "@/assets/mockup-chillimedia.png";
+import dermosilOmslag1 from "@/assets/dermosil-omslag-1.jpg";
+import dermosilOmslag2 from "@/assets/dermosil-omslag-2.jpg";
+import dermosilOmslag3 from "@/assets/dermosil-omslag-3.jpg";
 import motorcentralenDetail1 from "@/assets/motorcentralen-detail-1.png";
 import motorcentralenDetail2 from "@/assets/motorcentralen-detail-2.png";
 import motorcentralenDetail3 from "@/assets/motorcentralen-detail-3.jpg";
@@ -36,6 +39,11 @@ export interface ProcessGallery {
   images: string[];
 }
 
+export interface Interstitial {
+  title: string;
+  text: string;
+}
+
 export interface Project {
   id: string;
   title: string;
@@ -44,6 +52,8 @@ export interface Project {
   description: string;
   tags: string[];
   thumbnail: string;
+  topImages?: string[];
+  interstitial?: Interstitial;
   images: string[];
   videoUrl?: string;
   process: string;
@@ -104,6 +114,11 @@ export const projects: Project[] = [
     description: "Ett projekt jag arbetade i, under min praktik hos Chillimedia.",
     tags: ["Adobe Illustrator", "Adobe After Effects", "Adobe Photoshop"],
     thumbnail: mockupVisitkort,
+    topImages: [dermosilOmslag1, dermosilOmslag2, dermosilOmslag3],
+    interstitial: {
+      title: "Framtagning av koncept",
+      text: "Jag, tillsammans med två medarbetare på Chillimedia tog fram ett koncept med målet att kunden skulle introduceras till den svenska marknaden. Konceptets namn var \"Dejta Dermosil\", och skulle bestå av en reel serie på sociala medier där man lär känna företaget. Jag tog fram tre förslag på omslag för konceptet, som skulle användas på sociala medier för att markera serien och ge en känsla av innehållet.",
+    },
     images: ["/placeholder.svg", "/placeholder.svg"],
     process: "Konceptet utvecklades genom skisser och moodboards innan den digitala produktionen.",
     tools: ["Adobe Illustrator", "Adobe After Effects", "Adobe Photoshop"],
