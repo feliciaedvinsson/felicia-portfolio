@@ -141,6 +141,7 @@ export const projects: Project[] = [
     tags: ["Adobe After Effects"],
     thumbnail: mockupChillimedia,
     images: ["/placeholder.svg"],
+    videoUrl: "https://www.youtube.com/embed/gPHQSxEfa5Y",
     process: "Mer information kommer snart.",
     tools: ["Adobe After Effects"],
   },
