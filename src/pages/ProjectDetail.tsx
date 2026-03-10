@@ -152,7 +152,7 @@ const ProjectDetail = () => {
         {project.mediaRow && (
           <div className="grid grid-cols-3 gap-4 mb-8">
             {project.mediaRow.items.map((item, i) => (
-              <div key={i} className="rounded-xl overflow-hidden bg-muted aspect-[4/5]">
+              <div key={i} className="rounded-xl overflow-hidden bg-muted">
                 {item.type === "video" ? (
                   <video
                     src={item.src}
@@ -160,10 +160,10 @@ const ProjectDetail = () => {
                     loop
                     muted
                     playsInline
-                    className="w-full h-full object-cover"
+                    className="w-full h-auto"
                   />
                 ) : (
-                  <img src={item.src} alt={`${project.title} media ${i + 1}`} className="w-full h-full object-cover" />
+                  <img src={item.src} alt={`${project.title} media ${i + 1}`} className="w-full h-auto" />
                 )}
               </div>
             ))}
