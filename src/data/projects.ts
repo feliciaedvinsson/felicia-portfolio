@@ -71,6 +71,8 @@ export interface Project {
   processTitle?: string;
   process: string;
   processGalleries?: ProcessGallery[];
+  mediaRow?: MediaRow;
+  bottomSection?: BottomSection;
   tools: string[];
   links?: ProjectLink[];
 }
