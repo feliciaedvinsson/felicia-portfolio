@@ -56,6 +56,7 @@ export interface Project {
   interstitial?: Interstitial;
   images: string[];
   videoUrl?: string;
+  processTitle?: string;
   process: string;
   processGalleries?: ProcessGallery[];
   tools: string[];
