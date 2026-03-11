@@ -173,7 +173,7 @@ export const projects: Project[] = [
     tools: ["Adobe Illustrator", "Adobe After Effects", "Adobe Photoshop"],
   },
   {
-    id: "grafisk-branding",
+    id: "umekakel",
     title: "Umekakel",
     category: "Grafisk Design",
     categories: ["Grafisk Design"],
