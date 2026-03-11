@@ -185,7 +185,7 @@ export const projects: Project[] = [
     tools: ["Adobe Illustrator", "Adobe Photoshop"],
   },
   {
-    id: "foto-natur",
+    id: "tornedalens-textil",
     title: "Tornedalens textil",
     category: "Fotografi",
     categories: ["Grafisk Design", "Fotografi", "Motion & Video"],
