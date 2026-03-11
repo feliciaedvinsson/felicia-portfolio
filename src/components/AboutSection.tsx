@@ -51,7 +51,7 @@ const AboutSection = () => {
                 Förutom min tekniska bakgrund har jag erfarenheter inom service, försäljning och projektledning, vilket har hjälpt mig att utveckla starka kommunikations- och samarbetsfärdigheter. Jag tror att ett framgångsrikt projekt bygger på ett bra samarbete mellan kollegor och kunder, och jag strävar alltid efter att skapa en öppen och inkluderande dialog för att nå de bästa resultaten.
               </p>
               <p>
-                Jag studerar för närvarande en kandidatexamen i digital design vid{" "}
+                Jag tar min kandidatexamen i digital design vid{" "}
                 <span className="text-foreground font-medium">Högskolan Kristianstad</span>, där jag har fått möjlighet att fördjupa mig i designteori, användarcentrerade metoder och kreativa tekniker. Tveka inte att höra av dig om du vill samarbeta, eller om du är nyfiken på att veta mer om mig och mina projekt!
               </p>
             </div>
