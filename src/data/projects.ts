@@ -104,7 +104,7 @@ export const categories = [
 
 export const projects: Project[] = [
   {
-    id: "ui-app-redesign",
+    id: "ui-nordvag",
     title: "Nordväg",
     category: "UI Design",
     categories: ["UI Design"],
