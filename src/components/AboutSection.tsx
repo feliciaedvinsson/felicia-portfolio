@@ -57,7 +57,7 @@ const AboutSection = () => {
 
             <div className="pt-6">
               <Button asChild variant="outline" className="rounded-full px-6 gap-2">
-                <a href="/cv.pdf" download>
+                <a href="/CV Felicia Edvinsson.pdf" download="CV Felicia Edvinsson.pdf">
                   <Download className="w-4 h-4" />
                   Ladda ner CV
                 </a>
