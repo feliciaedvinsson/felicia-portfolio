@@ -243,12 +243,16 @@ const ProjectDetail = () => {
           </div>
         }
 
-        {/* Media Row */}
-        {project.mediaRow &&
-        <div className="grid grid-cols-2 gap-4 mb-8">
+        {/* Media Row – after interstitial (default) */}
+        {project.mediaRow && project.mediaRow.position !== "before-process" &&
+        <div className={`grid ${project.mediaRow.items.length === 3 ? 'grid-cols-3' : 'grid-cols-2'} gap-4 mb-8`}>
             {project.mediaRow.items.map((item, i) =>
           <div key={i} className="rounded-xl overflow-hidden bg-muted">
-                <img src={item.src} alt={`${project.title} media ${i + 1}`} className="w-full h-auto" />
+                {item.type === "video" ? (
+                  <video src={item.src} controls autoPlay={item.autoPlay} loop={item.loop} muted={item.muted} className="w-full h-auto" />
+                ) : (
+                  <img src={item.src} alt={`${project.title} media ${i + 1}`} className="w-full h-auto" />
+                )}
               </div>
           )}
           </div>
