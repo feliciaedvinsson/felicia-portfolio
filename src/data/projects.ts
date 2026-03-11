@@ -215,6 +215,7 @@ export const projects: Project[] = [
       videos: [
         { type: "video", src: tornedalensBlackweek, autoPlay: false, loop: false, muted: false },
       ],
+      videosFirst: true,
     },
     tools: ["Adobe Lightroom", "Adobe Illustrator", "Adobe After Effects", "Adobe Photoshop"],
   },
