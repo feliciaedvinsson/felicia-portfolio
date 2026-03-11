@@ -242,10 +242,8 @@ const ProjectDetail = () => {
         {/* Bottom Section */}
         {project.bottomSection &&
         <div className="mb-12">
-            <h2 className="text-2xl font-bold mb-3">{project.bottomSection.title}</h2>
-            <p className="text-muted-foreground leading-relaxed whitespace-pre-line mb-6">{project.bottomSection.text}</p>
             {project.bottomSection.videos && project.bottomSection.videos.length > 0 &&
-          <div className="grid grid-cols-2 gap-4">
+          <div className={`${project.bottomSection.videos.length === 1 ? '' : 'grid grid-cols-2'} gap-4 mb-8`}>
                 {project.bottomSection.videos.map((vid, i) =>
             <div key={i} className="rounded-xl overflow-hidden bg-muted">
                     <video
@@ -260,7 +258,9 @@ const ProjectDetail = () => {
                   </div>
             )}
               </div>
-          }
+           }
+            <h2 className="text-2xl font-bold mb-3">{project.bottomSection.title}</h2>
+            <p className="text-muted-foreground leading-relaxed whitespace-pre-line mb-6">{project.bottomSection.text}</p>
           </div>
         }
 
