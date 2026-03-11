@@ -8,6 +8,7 @@ import tornedalensFoto6 from "@/assets/tornedalens-foto-6.jpg";
 import tornedalensFoto7 from "@/assets/tornedalens-foto-7.png";
 import tornedalensFoto8 from "@/assets/tornedalens-foto-8.png";
 import tornedalensFoto9 from "@/assets/tornedalens-foto-9.png";
+import tornedalensBlackweek from "@/assets/tornedalens-blackweek.mp4";
 import mockupTradgardDetail from "@/assets/mockup-tradgard-detail.png";
 import mockupTradgard from "@/assets/mockup-tradgard.png";
 import mockupVisitkort from "@/assets/mockup-visitkort.png";
