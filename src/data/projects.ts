@@ -182,6 +182,8 @@ export const projects: Project[] = [
     tags: ["Adobe Illustrator", "Adobe Photoshop"],
     thumbnail: mockupUmekakel,
     images: [umekakelDetail, umekakelDetail2, umekakelDetail3],
+    topImages: [umekakelFlyer],
+    topImagesLayout: "stacked" as const,
     process: "Under min praktik hos Chillimedia fick jag i uppdrag att skapa marknadsföringsmaterial för en av deras kunder. Uppdraget bestod av en A5-flyer med fram- och baksida, som skulle delas ut i brevlådor, samt en A4-poster som kunde sättas upp i exempelvis trapphus.\n\nMålet med projektet var att presentera företaget, visa vilka tjänster de erbjuder och samtidigt locka potentiella kunder i området. Jag fick fria händer i designen, men utgick från företagets grafiska profil och fick veta att tjänsterna skulle framgå tydligt.\n\nUnder processen fokuserade jag på att skapa en tydlig, attraktiv och lättillgänglig design som snabbt kommunicerar företagets budskap. Jag tog hänsyn till målgruppen och den begränsade distributionen inom ett specifikt bostadsområde, vilket påverkade både layout och informationsmängd.\n\nResultatet blev ett sammanhängande uttryck mellan flyer och poster, där båda formaten tydligt lyfter fram företagets tjänster på ett engagerande och lättförståeligt sätt.",
     tools: ["Adobe Illustrator", "Adobe Photoshop"],
   },
