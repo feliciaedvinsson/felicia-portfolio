@@ -73,6 +73,7 @@ export interface MediaItem {
 
 export interface MediaRow {
   items: MediaItem[];
+  position?: "before-process" | "after-interstitial";
 }
 
 export interface BottomSection {
