@@ -243,7 +243,7 @@ const ProjectDetail = () => {
         {project.bottomSection && (() => {
           const bs = project.bottomSection;
           const videosBlock = bs.videos && bs.videos.length > 0 && (
-            <div className={`${bs.videos.length === 1 ? '' : 'grid grid-cols-2'} gap-4 mb-8`}>
+            <div className={`${bs.videos.length === 1 ? 'max-w-[50%]' : 'grid grid-cols-2'} gap-4 mb-8`}>
               {bs.videos.map((vid, i) =>
                 <div key={i} className="rounded-xl overflow-hidden bg-muted">
                   <video
