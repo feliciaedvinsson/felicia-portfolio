@@ -299,7 +299,7 @@ export const projects: Project[] = [
     tags: ["Adobe Illustrator", "Adobe Photoshop"],
     thumbnail: mockupEpson,
     images: ["/placeholder.svg", "/placeholder.svg"],
-    process: "Projektet inkluderade konceptutveckling och illustrationsarbete för att skapa en unik poster.",
+    process: "Mer information och visuellt innehåll kommer snart.",
     tools: ["Adobe Illustrator", "Adobe Photoshop"],
   },
 ];
