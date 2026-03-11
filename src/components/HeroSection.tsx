@@ -4,7 +4,7 @@ const HeroSection = () => {
   return (
     <section
       id="hem"
-      className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      className="relative min-h-screen flex items-center justify-center overflow-hidden pb-0">
       
       {/* Decorative shapes */}
       <div className="absolute top-20 right-10 w-64 h-64 rounded-full bg-primary/5 blur-3xl" />
