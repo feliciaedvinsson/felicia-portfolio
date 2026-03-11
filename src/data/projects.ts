@@ -177,7 +177,7 @@ export const projects: Project[] = [
     title: "Umekakel",
     category: "Grafisk Design",
     categories: ["Grafisk Design"],
-    description: "Reklam flyers till företaget Umekakel, som skapades under min praktik hos Chillimedia.",
+    description: "Reklamflyers till företaget Umekakel, som skapades under min praktik hos Chillimedia.",
     tags: ["Adobe Illustrator", "Adobe Photoshop"],
     thumbnail: mockupUmekakel,
     images: [umekakelDetail, umekakelDetail2, umekakelDetail3],
