@@ -78,6 +78,7 @@ export interface BottomSection {
   title: string;
   text: string;
   videos?: MediaItem[];
+  videosFirst?: boolean;
 }
 
 export interface Project {
