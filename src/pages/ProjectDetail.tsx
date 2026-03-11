@@ -165,15 +165,15 @@ const ProjectDetail = () => {
           <div className="flex flex-col gap-6 mb-12">
             <div className="grid grid-cols-2 gap-6">
               {project.topImages.slice(0, 4).map((img, i) => (
-                <div key={i} className="rounded-xl overflow-hidden bg-muted">
-                  <img src={img} alt={`${project.title} ${i + 1}`} className="w-full h-auto object-contain" />
+                <div key={i} className="rounded-xl overflow-hidden">
+                  <img src={img} alt={`${project.title} ${i + 1}`} className="w-full h-full object-cover" />
                 </div>
               ))}
             </div>
             <div className="grid grid-cols-3 gap-6">
               {project.topImages.slice(4, 7).map((img, i) => (
-                <div key={i} className="rounded-xl overflow-hidden bg-muted">
-                  <img src={img} alt={`${project.title} ${i + 5}`} className="w-full h-auto object-contain" />
+                <div key={i} className="rounded-xl overflow-hidden">
+                  <img src={img} alt={`${project.title} ${i + 5}`} className="w-full h-full object-cover" />
                 </div>
               ))}
             </div>
