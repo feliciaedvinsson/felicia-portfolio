@@ -88,7 +88,7 @@ export interface Project {
   tags: string[];
   thumbnail: string;
   topImages?: string[];
-  topImagesLayout?: "stacked" | "grid";
+  topImagesLayout?: "stacked" | "grid" | "grid-2x2-plus-3";
   interstitial?: Interstitial;
   images: string[];
   videoUrl?: string;
