@@ -210,7 +210,7 @@ export const projects: Project[] = [
     tools: ["Figma"],
   },
   {
-    id: "film-kortfilm",
+    id: "motorcentralen-illustration",
     title: "Motorcentralen",
     category: "Illustration",
     categories: ["Illustration"],
