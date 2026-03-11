@@ -145,8 +145,8 @@ const ProjectDetail = () => {
         <h1 className="text-4xl md:text-5xl font-bold mb-6">{project.title}</h1>
         <p className="text-lg text-muted-foreground mb-10 max-w-2xl">{project.description}</p>
 
-        {/* Top Images (full-width stacked, above Process) */}
-        {project.topImages && project.topImages.length > 0 &&
+        {/* Top Images – stacked layout (above Process) */}
+        {project.topImages && project.topImages.length > 0 && project.topImagesLayout === "stacked" &&
         <div className="flex flex-col gap-6 mb-12">
             {project.topImages.map((img, i) =>
           <div key={i} className="rounded-xl overflow-hidden bg-muted w-full">
@@ -190,7 +190,17 @@ const ProjectDetail = () => {
         <ProcessCarousel key={gi} title={gallery.title} images={gallery.images} projectTitle={project.title} />
         )}
 
-        {/* Interstitial title + text */}
+        {/* Top Images – grid layout (after Process) */}
+        {project.topImages && project.topImages.length > 0 && project.topImagesLayout !== "stacked" &&
+        <div className="grid grid-cols-3 gap-4 mb-8">
+            {project.topImages.map((img, i) =>
+          <div key={i} className="rounded-xl overflow-hidden bg-muted">
+                <img src={img} alt={`${project.title} omslag ${i + 1}`} className="w-full h-auto object-contain" />
+              </div>
+          )}
+          </div>
+        }
+
         {project.interstitial &&
         <div className="mb-10">
             <h2 className="text-2xl font-bold mb-3">{project.interstitial.title}</h2>
