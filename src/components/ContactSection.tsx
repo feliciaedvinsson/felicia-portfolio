@@ -84,13 +84,14 @@ const ContactSection = () => {
         {/* Social icons */}
         <div className="flex justify-center gap-5 mt-14">
           {[
-            { icon: Instagram, label: "Instagram" },
-            { icon: Linkedin, label: "LinkedIn" },
-            { icon: Mail, label: "Email" },
-          ].map(({ icon: Icon, label }) => (
+            { icon: Linkedin, label: "LinkedIn", href: "https://www.linkedin.com/in/felicia-edvinsson-9883612aa/" },
+            { icon: Mail, label: "Email", href: "mailto:feliciaedvinsson@hotmail.com" },
+          ].map(({ icon: Icon, label, href }) => (
             <a
               key={label}
-              href="#"
+              href={href}
+              target={label === "LinkedIn" ? "_blank" : undefined}
+              rel={label === "LinkedIn" ? "noopener noreferrer" : undefined}
               aria-label={label}
               className="w-11 h-11 rounded-full border border-border flex items-center justify-center
                 text-muted-foreground hover:text-primary hover:border-primary/40 transition-all duration-200"
