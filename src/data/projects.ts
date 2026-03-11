@@ -29,6 +29,8 @@ import motorcentralenDetail3 from "@/assets/motorcentralen-detail-3.jpg";
 import motorcentralenDetail4 from "@/assets/motorcentralen-detail-4.jpg";
 import nordvagDetail1 from "@/assets/nordvag-detail-1.png";
 import nordvagDetail2 from "@/assets/nordvag-detail-2.png";
+import nordvagMockupMobile from "@/assets/nordvag-mockup-mobile.png";
+import nordvagMockupDesktop from "@/assets/nordvag-mockup-desktop.png";
 import nordvagSketch1 from "@/assets/nordvag-sketch-1.jpeg";
 import nordvagSketch2 from "@/assets/nordvag-sketch-2.jpeg";
 import nordvagSketch3 from "@/assets/nordvag-sketch-3.jpeg";
@@ -108,6 +110,7 @@ export const projects: Project[] = [
     description: "En prototyp av en fiktiv hemsida för friluftsprodukter.",
     tags: ["Figma"],
     thumbnail: mockupNordvag,
+    topImages: [nordvagMockupMobile, nordvagMockupDesktop],
     images: [nordvagDetail1, nordvagDetail2],
     process: "I denna uppgift, som utfördes under min utbildning skulle vi skapa en hemsida för ett fiktivt företag som säljer friluftsprodukter. Vi fick en grafisk profil och vissa bilder som var obligatoriska att använda, vilket gav ett tydligt ramverk för designen.\n\nJag började med skisser på papper för att snabbt utforska layoutidéer och hur innehållet kunde struktureras både för desktop och mobil. När jag hade en tydligare vision skapade jag wireframes i Adobe Illustrator, där fokus låg på användarflöde och struktur snarare än färg och stil.\n\nSlutligen utvecklade jag den färdiga designen i Figma, där jag implementerade den grafiska profilen och de obligatoriska bilderna. Jag arbetade med responsiva versioner för både desktop och mobil och säkerställde att designen var användarvänlig och visuellt konsekvent över olika skärmstorlekar.",
     processGalleries: [
