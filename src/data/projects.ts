@@ -141,7 +141,7 @@ export const projects: Project[] = [
     tools: ["Adobe After Effects"],
   },
   {
-    id: "grafisk-affisch",
+    id: "dermosil",
     title: "Dermosil",
     category: "Grafisk Design",
     categories: ["Grafisk Design", "Motion & Video"],
