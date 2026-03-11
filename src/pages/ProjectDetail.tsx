@@ -156,6 +156,26 @@ const ProjectDetail = () => {
           </div>
         }
 
+        {/* Top Images – 2x2 grid + 3-column row layout */}
+        {project.topImages && project.topImages.length >= 7 && project.topImagesLayout === "grid-2x2-plus-3" &&
+          <div className="flex flex-col gap-6 mb-12">
+            <div className="grid grid-cols-2 gap-6">
+              {project.topImages.slice(0, 4).map((img, i) =>
+                <div key={i} className="rounded-xl overflow-hidden bg-muted">
+                  <img src={img} alt={`${project.title} ${i + 1}`} className="w-full h-auto object-contain" />
+                </div>
+              )}
+            </div>
+            <div className="grid grid-cols-3 gap-6">
+              {project.topImages.slice(4, 7).map((img, i) =>
+                <div key={i} className="rounded-xl overflow-hidden bg-muted">
+                  <img src={img} alt={`${project.title} ${i + 5}`} className="w-full h-auto object-contain" />
+                </div>
+              )}
+            </div>
+          </div>
+        }
+
         {/* Process */}
         <div className="mb-12">
           <h2 className="text-2xl font-bold mb-4">{project.processTitle || "Process"}</h2>

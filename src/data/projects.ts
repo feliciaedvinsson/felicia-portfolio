@@ -1,6 +1,13 @@
 import mockupNordvag from "@/assets/mockup-nordvag.png";
 import tornedalensFoto1 from "@/assets/tornedalens-foto-1.jpg";
 import tornedalensFoto2 from "@/assets/tornedalens-foto-2.jpg";
+import tornedalensFoto3 from "@/assets/tornedalens-foto-3.png";
+import tornedalensFoto4 from "@/assets/tornedalens-foto-4.png";
+import tornedalensFoto5 from "@/assets/tornedalens-foto-5.png";
+import tornedalensFoto6 from "@/assets/tornedalens-foto-6.jpg";
+import tornedalensFoto7 from "@/assets/tornedalens-foto-7.png";
+import tornedalensFoto8 from "@/assets/tornedalens-foto-8.png";
+import tornedalensFoto9 from "@/assets/tornedalens-foto-9.png";
 import mockupTradgardDetail from "@/assets/mockup-tradgard-detail.png";
 import mockupTradgard from "@/assets/mockup-tradgard.png";
 import mockupVisitkort from "@/assets/mockup-visitkort.png";
@@ -81,7 +88,7 @@ export interface Project {
   tags: string[];
   thumbnail: string;
   topImages?: string[];
-  topImagesLayout?: "stacked" | "grid";
+  topImagesLayout?: "stacked" | "grid" | "grid-2x2-plus-3";
   interstitial?: Interstitial;
   images: string[];
   videoUrl?: string;
@@ -195,6 +202,8 @@ export const projects: Project[] = [
     description: "Ett projekt jag arbetade i, under min praktik hos Chillimedia.",
     tags: ["Adobe Lightroom", "Adobe Illustrator", "Adobe After Effects", "Adobe Photoshop"],
     thumbnail: mockupNaturfoto,
+    topImages: [tornedalensFoto3, tornedalensFoto4, tornedalensFoto5, tornedalensFoto6, tornedalensFoto7, tornedalensFoto8, tornedalensFoto9],
+    topImagesLayout: "grid-2x2-plus-3" as const,
     images: [tornedalensFoto1, tornedalensFoto2],
     processTitle: "Fotografi",
     process: "Dessa bilder fotograferades och redigerades av mig under min praktik hos Chillimedia. Fotograferingen var en del av ett större uppdrag där vi producerade material åt en kund. Teamet arbetade med att filma en headerfilm till kundens hemsida, samtidigt som vi tog fram bildmaterial som kunde användas till företagets sociala medier.\n\nMin roll var att fotografera stillbilder under produktionen och därefter redigera dem för att skapa ett enhetligt och visuellt tilltalande resultat. Fokus låg på att ta fram bilder som både passade kundens visuella uttryck och fungerade bra i digitala kanaler.",
