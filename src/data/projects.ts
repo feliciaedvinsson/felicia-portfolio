@@ -104,7 +104,7 @@ export const categories = [
 
 export const projects: Project[] = [
   {
-    id: "ui-app-redesign",
+    id: "ui-nordvag",
     title: "Nordväg",
     category: "UI Design",
     categories: ["UI Design"],
@@ -141,7 +141,7 @@ export const projects: Project[] = [
     tools: ["Adobe After Effects"],
   },
   {
-    id: "grafisk-affisch",
+    id: "dermosil",
     title: "Dermosil",
     category: "Grafisk Design",
     categories: ["Grafisk Design", "Motion & Video"],
@@ -173,7 +173,7 @@ export const projects: Project[] = [
     tools: ["Adobe Illustrator", "Adobe After Effects", "Adobe Photoshop"],
   },
   {
-    id: "grafisk-branding",
+    id: "umekakel",
     title: "Umekakel",
     category: "Grafisk Design",
     categories: ["Grafisk Design"],
@@ -185,7 +185,7 @@ export const projects: Project[] = [
     tools: ["Adobe Illustrator", "Adobe Photoshop"],
   },
   {
-    id: "foto-natur",
+    id: "tornedalens-textil",
     title: "Tornedalens textil",
     category: "Fotografi",
     categories: ["Grafisk Design", "Fotografi", "Motion & Video"],
@@ -198,7 +198,7 @@ export const projects: Project[] = [
     tools: ["Adobe Lightroom", "Adobe Illustrator", "Adobe After Effects", "Adobe Photoshop"],
   },
   {
-    id: "ui-dashboard",
+    id: "tradklippet",
     title: "Trädklippet",
     category: "UI Design",
     categories: ["UI Design"],
@@ -210,7 +210,7 @@ export const projects: Project[] = [
     tools: ["Figma"],
   },
   {
-    id: "film-kortfilm",
+    id: "motorcentralen-illustration",
     title: "Motorcentralen",
     category: "Illustration",
     categories: ["Illustration"],
