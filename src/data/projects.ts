@@ -198,7 +198,7 @@ export const projects: Project[] = [
     tools: ["Adobe Lightroom", "Adobe Illustrator", "Adobe After Effects", "Adobe Photoshop"],
   },
   {
-    id: "ui-dashboard",
+    id: "tradklippet",
     title: "Trädklippet",
     category: "UI Design",
     categories: ["UI Design"],
