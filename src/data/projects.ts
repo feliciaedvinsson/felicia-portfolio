@@ -29,6 +29,8 @@ import motorcentralenDetail3 from "@/assets/motorcentralen-detail-3.jpg";
 import motorcentralenDetail4 from "@/assets/motorcentralen-detail-4.jpg";
 import nordvagDetail1 from "@/assets/nordvag-detail-1.png";
 import nordvagDetail2 from "@/assets/nordvag-detail-2.png";
+import nordvagMockupMobile from "@/assets/nordvag-mockup-mobile.png";
+import nordvagMockupDesktop from "@/assets/nordvag-mockup-desktop.png";
 import nordvagSketch1 from "@/assets/nordvag-sketch-1.jpeg";
 import nordvagSketch2 from "@/assets/nordvag-sketch-2.jpeg";
 import nordvagSketch3 from "@/assets/nordvag-sketch-3.jpeg";
