@@ -110,6 +110,7 @@ export const projects: Project[] = [
     description: "En prototyp av en fiktiv hemsida för friluftsprodukter.",
     tags: ["Figma"],
     thumbnail: mockupNordvag,
+    topImages: [nordvagMockupMobile, nordvagMockupDesktop],
     images: [nordvagDetail1, nordvagDetail2],
     process: "I denna uppgift, som utfördes under min utbildning skulle vi skapa en hemsida för ett fiktivt företag som säljer friluftsprodukter. Vi fick en grafisk profil och vissa bilder som var obligatoriska att använda, vilket gav ett tydligt ramverk för designen.\n\nJag började med skisser på papper för att snabbt utforska layoutidéer och hur innehållet kunde struktureras både för desktop och mobil. När jag hade en tydligare vision skapade jag wireframes i Adobe Illustrator, där fokus låg på användarflöde och struktur snarare än färg och stil.\n\nSlutligen utvecklade jag den färdiga designen i Figma, där jag implementerade den grafiska profilen och de obligatoriska bilderna. Jag arbetade med responsiva versioner för både desktop och mobil och säkerställde att designen var användarvänlig och visuellt konsekvent över olika skärmstorlekar.",
     processGalleries: [
