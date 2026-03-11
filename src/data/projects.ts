@@ -8,6 +8,7 @@ import tornedalensFoto6 from "@/assets/tornedalens-foto-6.jpg";
 import tornedalensFoto7 from "@/assets/tornedalens-foto-7.png";
 import tornedalensFoto8 from "@/assets/tornedalens-foto-8.png";
 import tornedalensFoto9 from "@/assets/tornedalens-foto-9.png";
+import tornedalensBlackweek from "@/assets/tornedalens-blackweek.mp4";
 import mockupTradgardDetail from "@/assets/mockup-tradgard-detail.png";
 import mockupTradgard from "@/assets/mockup-tradgard.png";
 import mockupVisitkort from "@/assets/mockup-visitkort.png";
@@ -77,6 +78,7 @@ export interface BottomSection {
   title: string;
   text: string;
   videos?: MediaItem[];
+  videosFirst?: boolean;
 }
 
 export interface Project {
@@ -207,6 +209,14 @@ export const projects: Project[] = [
     images: [tornedalensFoto1, tornedalensFoto2],
     processTitle: "Fotografi",
     process: "Dessa bilder fotograferades och redigerades av mig under min praktik hos Chillimedia. Fotograferingen var en del av ett större uppdrag där vi producerade material åt en kund. Teamet arbetade med att filma en headerfilm till kundens hemsida, samtidigt som vi tog fram bildmaterial som kunde användas till företagets sociala medier.\n\nMin roll var att fotografera stillbilder under produktionen och därefter redigera dem för att skapa ett enhetligt och visuellt tilltalande resultat. Fokus låg på att ta fram bilder som både passade kundens visuella uttryck och fungerade bra i digitala kanaler.",
+    bottomSection: {
+      title: "Rörligt material",
+      text: "Kunden önskade marknadsföringsmaterial till en Black Week-kampanj. Jag fick relativt fria händer i den kreativa utformningen, men utgick från vissa förutbestämda ramar, bland annat specifika färger på handskarna som skulle lyftas i kampanjen samt det kampanjpris som skulle kommuniceras.\n\nMaterielet togs fram med fokus på tydlig priskommunikation och ett uttryck som passar Black Week, där kontrast och tydlighet var centrala. Designen anpassades för att framhäva produkterna och göra erbjudandet lätt att uppfatta snabbt.\n\nKampanjmaterialet producerades i två språkversioner, svenska och norska, eftersom det skulle publiceras i båda länderna.",
+      videos: [
+        { type: "video", src: tornedalensBlackweek, autoPlay: false, loop: false, muted: false },
+      ],
+      videosFirst: true,
+    },
     tools: ["Adobe Lightroom", "Adobe Illustrator", "Adobe After Effects", "Adobe Photoshop"],
   },
   {

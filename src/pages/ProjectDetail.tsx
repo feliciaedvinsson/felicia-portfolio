@@ -240,29 +240,36 @@ const ProjectDetail = () => {
         }
 
         {/* Bottom Section */}
-        {project.bottomSection &&
-        <div className="mb-12">
-            <h2 className="text-2xl font-bold mb-3">{project.bottomSection.title}</h2>
-            <p className="text-muted-foreground leading-relaxed whitespace-pre-line mb-6">{project.bottomSection.text}</p>
-            {project.bottomSection.videos && project.bottomSection.videos.length > 0 &&
-          <div className="grid grid-cols-2 gap-4">
-                {project.bottomSection.videos.map((vid, i) =>
-            <div key={i} className="rounded-xl overflow-hidden bg-muted">
-                    <video
-                src={vid.src}
-                autoPlay={vid.autoPlay}
-                loop={vid.loop}
-                muted={vid.muted}
-                playsInline
-                controls={!vid.autoPlay}
-                className="w-full h-auto" />
-              
-                  </div>
-            )}
-              </div>
-          }
-          </div>
-        }
+        {project.bottomSection && (() => {
+          const bs = project.bottomSection;
+          const videosBlock = bs.videos && bs.videos.length > 0 && (
+            <div className={`${bs.videos.length === 1 ? '' : 'grid grid-cols-2'} gap-4 mb-8`}>
+              {bs.videos.map((vid, i) =>
+                <div key={i} className="rounded-xl overflow-hidden bg-muted">
+                  <video
+                    src={vid.src}
+                    autoPlay={vid.autoPlay}
+                    loop={vid.loop}
+                    muted={vid.muted}
+                    playsInline
+                    controls={!vid.autoPlay}
+                    className="w-full h-auto" />
+                </div>
+              )}
+            </div>
+          );
+          const textBlock = (
+            <>
+              <h2 className="text-2xl font-bold mb-3">{bs.title}</h2>
+              <p className="text-muted-foreground leading-relaxed whitespace-pre-line mb-6">{bs.text}</p>
+            </>
+          );
+          return (
+            <div className="mb-12">
+              {bs.videosFirst ? <>{videosBlock}{textBlock}</> : <>{textBlock}{videosBlock}</>}
+            </div>
+          );
+        })()}
 
         {/* Video placeholder */}
         {project.videoUrl &&
