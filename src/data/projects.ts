@@ -50,6 +50,8 @@ import nordvagWireframe1 from "@/assets/nordvag-wireframe-1.png";
 import nordvagWireframe2 from "@/assets/nordvag-wireframe-2.png";
 import nordvagWireframe3 from "@/assets/nordvag-wireframe-3.png";
 import riseEnergyCover from "@/assets/rise-energy-cover.jpg.asset.json";
+import riseNewFlavour from "@/assets/rise-new-flavour.mp4.asset.json";
+import riseEye from "@/assets/rise-eye.mp4.asset.json";
 
 export interface ProjectLink {
   label: string;
@@ -320,7 +322,7 @@ export const projects: Project[] = [
       videos: [
         {
           type: "video",
-          src: "https://www.w3schools.com/html/mov_bbb.mp4",
+          src: riseNewFlavour.url,
           autoPlay: false,
           loop: false,
           muted: false,
@@ -328,7 +330,7 @@ export const projects: Project[] = [
         },
         {
           type: "video",
-          src: "https://www.w3schools.com/html/movie.mp4",
+          src: riseEye.url,
           autoPlay: false,
           loop: false,
           muted: false,
