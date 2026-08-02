@@ -49,6 +49,7 @@ import nordvagSketch3 from "@/assets/nordvag-sketch-3.jpeg";
 import nordvagWireframe1 from "@/assets/nordvag-wireframe-1.png";
 import nordvagWireframe2 from "@/assets/nordvag-wireframe-2.png";
 import nordvagWireframe3 from "@/assets/nordvag-wireframe-3.png";
+import riseEnergyCover from "@/assets/rise-energy-cover.jpg.asset.json";
 
 export interface ProjectLink {
   label: string;
