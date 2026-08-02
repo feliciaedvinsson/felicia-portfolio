@@ -71,6 +71,7 @@ export interface MediaItem {
   autoPlay?: boolean;
   loop?: boolean;
   muted?: boolean;
+  caption?: string;
 }
 
 export interface MediaRow {
