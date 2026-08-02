@@ -49,6 +49,7 @@ import nordvagSketch3 from "@/assets/nordvag-sketch-3.jpeg";
 import nordvagWireframe1 from "@/assets/nordvag-wireframe-1.png";
 import nordvagWireframe2 from "@/assets/nordvag-wireframe-2.png";
 import nordvagWireframe3 from "@/assets/nordvag-wireframe-3.png";
+import riseEnergyCover from "@/assets/rise-energy-cover.jpg.asset.json";
 
 export interface ProjectLink {
   label: string;
@@ -71,6 +72,7 @@ export interface MediaItem {
   autoPlay?: boolean;
   loop?: boolean;
   muted?: boolean;
+  caption?: string;
 }
 
 export interface MediaRow {
@@ -301,6 +303,40 @@ export const projects: Project[] = [
     process:
       "Under min praktik hos Chillimedia arbetade jag med innehåll till en av deras kunder, där Chillimedia ansvarade för företagets sociala medier. Jag redigerade både bilder och video som skulle publiceras i deras kanaler, med fokus på att skapa material som var visuellt tilltalande och anpassat för plattformarna.\n\nJag var även delaktig i planeringen av innehållet och schemalade delar av publiceringarna, vilket gav mig erfarenhet av hur sociala medier kan struktureras strategiskt för att skapa ett jämnt och genomtänkt flöde.",
     tools: ["Adobe After Effects", "Adobe Lightroom", "Adobe Photoshop"],
+  },
+  {
+    id: "rise-energy",
+    title: "Rise Energy",
+    category: "Motion & Video",
+    categories: ["Motion & Video"],
+    description: "Ett projekt inom rörlig grafik för varumärket Rise Energy.",
+    tags: ["Adobe After Effects"],
+    thumbnail: riseEnergyCover.url,
+    images: [],
+    process: "Mer information kommer snart.",
+    bottomSection: {
+      title: "Rörligt material",
+      text: "Mer information kommer snart.",
+      videos: [
+        {
+          type: "video",
+          src: "https://www.w3schools.com/html/mov_bbb.mp4",
+          autoPlay: false,
+          loop: false,
+          muted: false,
+          caption: "Bildtext till video 1",
+        },
+        {
+          type: "video",
+          src: "https://www.w3schools.com/html/movie.mp4",
+          autoPlay: false,
+          loop: false,
+          muted: false,
+          caption: "Bildtext till video 2",
+        },
+      ],
+    },
+    tools: ["Adobe After Effects"],
   },
   {
     id: "intext-designstudio",
