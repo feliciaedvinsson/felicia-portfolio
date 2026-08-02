@@ -278,18 +278,23 @@ const ProjectDetail = () => {
           (() => {
             const bs = project.bottomSection;
             const videosBlock = bs.videos && bs.videos.length > 0 && (
-              <div className={`${bs.videos.length === 1 ? "max-w-[50%]" : "grid grid-cols-2"} gap-4 mb-8`}>
+              <div className={`${bs.videos.length === 1 ? "max-w-[50%]" : "grid grid-cols-1 md:grid-cols-2"} gap-4 mb-8`}>
                 {bs.videos.map((vid, i) => (
-                  <div key={i} className="rounded-xl overflow-hidden bg-muted">
-                    <video
-                      src={vid.src}
-                      autoPlay={vid.autoPlay}
-                      loop={vid.loop}
-                      muted={vid.muted}
-                      playsInline
-                      controls={!vid.autoPlay}
-                      className="w-full h-auto"
-                    />
+                  <div key={i}>
+                    <div className="rounded-xl overflow-hidden bg-muted">
+                      <video
+                        src={vid.src}
+                        autoPlay={vid.autoPlay}
+                        loop={vid.loop}
+                        muted={vid.muted}
+                        playsInline
+                        controls={!vid.autoPlay}
+                        className="w-full h-auto"
+                      />
+                    </div>
+                    {vid.caption && (
+                      <p className="text-sm text-muted-foreground mt-2">{vid.caption}</p>
+                    )}
                   </div>
                 ))}
               </div>
