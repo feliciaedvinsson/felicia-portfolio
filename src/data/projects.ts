@@ -326,7 +326,7 @@ export const projects: Project[] = [
           autoPlay: false,
           loop: false,
           muted: false,
-          caption: "Bildtext till video 1",
+          caption: "\n",
         },
         {
           type: "video",
