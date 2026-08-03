@@ -1,11 +1,10 @@
-const CACHE_NAME = 'felicia-portfolio-v1';
+const CACHE_NAME = 'felicia-portfolio-v2';
 
 const PRECACHE_URLS = [
   '/',
   '/index.html',
   '/favicon.ico',
   '/robots.txt',
-  '/CV Felicia Edvinsson.pdf',
 ];
 
 self.addEventListener('install', (event) => {
@@ -29,6 +28,13 @@ self.addEventListener('fetch', (event) => {
 
   // Skip non-GET and chrome-extension requests
   if (request.method !== 'GET' || !request.url.startsWith('http')) return;
+
+  // Never cache PDFs (CV) so the latest file is always downloaded
+  if (new URL(request.url).pathname.toLowerCase().endsWith('.pdf')) {
+    event.respondWith(fetch(request, { cache: 'no-store' }));
+    return;
+  }
+
 
   // For navigation requests, use network-first
   if (request.mode === 'navigate') {
