@@ -1,11 +1,10 @@
-const CACHE_NAME = 'felicia-portfolio-v1';
+const CACHE_NAME = 'felicia-portfolio-v2';
 
 const PRECACHE_URLS = [
   '/',
   '/index.html',
   '/favicon.ico',
   '/robots.txt',
-  '/CV Felicia Edvinsson.pdf',
 ];
 
 self.addEventListener('install', (event) => {
